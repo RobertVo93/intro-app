@@ -2,6 +2,8 @@ import "./globals.css";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import WebNavbar from "../components/navBar/webNavbar";
+import Footer from "../components/pageFooter";
+import AppWrapper from "../components/appWrapper";
 
 export default async function RootLayout({
   children,
@@ -15,8 +17,9 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className="font-poppins">
         <NextIntlClientProvider messages={messages}>
-          <WebNavbar />
-          {children}
+          <AppWrapper>
+            {children}
+          </AppWrapper>
         </NextIntlClientProvider>
       </body>
     </html>

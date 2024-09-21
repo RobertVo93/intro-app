@@ -2,7 +2,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react';
 import PanelItem from './panelItem';
 import { NavbarPanelTransition } from '../transitions/navbarItemTransition';
-import LocaleSwitcher from '../LocaleSwitcher/localeSwitcher';
+import LocaleSwitcher from '../localeSwitcher/localeSwitcher';
 
 export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   const [showPanel, setShowPanel] = useState(false);
@@ -27,9 +27,6 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
     >
       {title}
       {canExpand ? <KeyboardArrowDownIcon /> : null}
-
-      {/* {<ServicePanel/>} */}
-
       {showPanel && canExpand && (
         <div
           className='w-fit h-fit p-[40px] absolute top-[65px] bg-[#003166] shadow-lg cursor-default'
@@ -39,7 +36,6 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
               {displayedPanel()}
             </NavbarPanelTransition>
           }
-          
         </div>
       )}
     </div>
@@ -129,7 +125,6 @@ const CareersPanel = () => {
     </div>
   )
 }
-
 
 const AboutPanel = () => {
   const items = [

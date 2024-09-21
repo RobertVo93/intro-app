@@ -1,8 +1,8 @@
-import RemoveIcon from '@mui/icons-material/Remove';
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import ComponentNameTag from '../componentNameTag';
 
 export default function Experience(){
   const t = useTranslations('locations.experience')
@@ -38,7 +38,7 @@ export default function Experience(){
   return(
     <div className='w-full px-[60px] pt-[80px] flex flex-col'>
       <div className='flex items-center text-[14px] text-[#002042] font-semibold'>
-        <RemoveIcon className='text-red-700 h-[30px]'/> EXPERIENCE
+        <ComponentNameTag name='EXPERIENCE'/>
       </div>
       <div className='mt-[20px] flex flex-col text-[#222222] text-[16px] font-normal leading-[24px]'>
         <List>

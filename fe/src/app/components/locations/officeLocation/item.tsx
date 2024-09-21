@@ -10,6 +10,7 @@ import { Circle, GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import React, { Dispatch, SetStateAction } from 'react';
+import ComponentNameTag from '../../componentNameTag';
 
 type ItemProps = {
   location: string;
@@ -37,10 +38,7 @@ export default function OfficeLocationItem({
 
   return(
     <div className='w-1/2 relative'>
-      <div className='ml-[20px] mb-5 flex items-center text-[14px] text-[#002042] font-semibold'>
-        <RemoveIcon className='text-red-700 h-[30px]'/> 
-        {location} Office
-      </div>
+      <ComponentNameTag name={`${location} Office`} />
       <div className={`w-full h-[600px] border-[#002042] ${location==='HN' ? 'border-r-[1px]' : 'border-l-[1px]'}`}>
         <LoadScript googleMapsApiKey={`${apiKey}`}>
           <GoogleMap

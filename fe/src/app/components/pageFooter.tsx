@@ -2,7 +2,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 
-export default function LocationFooter(){
+export default function PageFooter(){
   return(
     <div className="w-full h-[full] px-[60px] pt-[30px] pb-[30px] flex items-end justify-between">
       <div className='text-[#002042] text-[13px] not-italic font-normal leading-[24px]'>

@@ -2,6 +2,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import ProfessionalsItem from './item';
 import { useEffect, useState } from 'react';
 import { Button } from '@mui/material';
+import ComponentNameTag from '../../componentNameTag';
 
 
 const professionals: ProfessionalsType[] = [
@@ -31,9 +32,7 @@ export default function Professionals(){
 
   return(
     <div className="w-full h-full flex flex-col px-[60px] pt-[80px]">
-      <div className='flex items-center text-[14px] text-[#002042] font-semibold'>
-        <RemoveIcon className='text-red-700 h-[30px]'/> PROFESSIONALS
-      </div>
+      <ComponentNameTag name='PROFESSIONALS' />
       <div className='w-full h-full flex flex-wrap mt-[20px]'>
         {displayItems.map((item, index) => (
           <div key={index} className='w-1/5 mt-[20px]'>

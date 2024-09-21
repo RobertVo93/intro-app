@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import CaseStudyTransition from '../../transitions/caseStudyTransition';
 import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
+import ComponentNameTag from '../../componentNameTag';
 
 
 export default function CaseStudies() {
@@ -53,11 +54,9 @@ export default function CaseStudies() {
         <div className='bg-black w-[200px]'></div>
       </div>
 
-      <div className='w-full h-[560px] z-50 absolute top-0 left-0 pl-[100px] text-white'>
+      <div className='w-full h-[560px] z-50 absolute top-0 left-0 pl-[120px] text-white'>
         <div className='px-[60px] pt-[60px] pb-[30px] w-full h-full flex flex-col'>
-          <div className='text-[14px] leading-5 uppercase not-italic font-semibold'>
-            <RemoveIcon className='text-red-700 h-[30px] items-center'/> CASE STUDIES
-          </div>
+          <ComponentNameTag name='CASE STUDIES' />
           <div className='w-[55%] h-[400px]'>
             {
               paginatedItems.map((item, index) => (
