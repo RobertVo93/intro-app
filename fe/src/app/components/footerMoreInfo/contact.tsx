@@ -2,7 +2,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 export default function Contact(){
   return(
-    <div className="w-1/3 flex flex-col">
+    <div className="w-1/3 pr-[50px] flex flex-col">
       <div className="text-[20px] not-italic font-semibold leading-5">
         Contact
       </div>

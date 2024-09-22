@@ -2,7 +2,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 export default function Careers(){
   return(
-    <div className="w-1/3 flex flex-col">
+    <div className="w-1/3 flex flex-col pr-[50px]">
       <div className="text-[20px] not-italic font-semibold leading-5">
         Careers
       </div>

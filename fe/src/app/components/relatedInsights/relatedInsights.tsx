@@ -2,7 +2,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 import { useEffect, useState } from 'react';
 import { Button } from '@mui/material';
 import RelatedInsightItem from './item';
-import ComponentNameTag from '../../componentNameTag';
+import ComponentNameTag from '../componentNameTag';
 
 const relatedInsights: RelatedInsightType[] = [
   {time: "September 16, 2024", title: "Vietnam Publishes Draft Circular on Open APIs in the Banking Industry", description: "On July 23, 2024, the State Bank of Vietnam (SBV) published a draft circular regulating the implementation of open (publicly available) application programming interfaces, or Open APIs, in the banking industry (Draft Circular) to collect public comments. Open APIs in the banking sector are APIs of banks that allow third parties to process data for their own use or to provide products and services to customers. Urgent need Currently, the development of Open APIs in Vietnam is fragmented, with each bank using different API standards and security standards. There is no common standard for information technology systems, information storage, security, connectivity, or legal frameworks. Therefore, the promulgation of a regulation on Open APIs is urgently needed to create a clear legal basis and guidance for electronic banking transactions, especially in connecting to bank information systems and processing customer data safely, and creating new, innovative products and services to meet the increasing needs of customers. Cooperation of banks required The Draft Circular requires banks to provide Open API services to third parties for connection to the bank system and data processing. Banks have the right to refuse or suspend Open API services if third parties do not meet specified conditions. However, banks will be responsible for ensuring the quality and security of data, providing tools for customer data queries and revocation of third-party data processing rights, and coordinating with third parties and authorities to resolve issues. The Draft Circular standardizes Open API functions for all banks according to the Open API function list and the technical standards list specified in the Draft Circular. Open API service contract The template Open API service contract between banks and third parties using Open API services must have certain required contents such as provisions regarding confidentiality, data use purpose, and that the security level"},
@@ -30,9 +30,9 @@ export default function RelatedInsights(){
   return (
     <div className="w-full h-full px-[60px] pt-[80px] flex flex-col">
       <ComponentNameTag name='RELATED INSIGHTS' />
-      <div className='w-full h-full flex flex-wrap mt-[20px]'>
+      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4">
         {displayItems.map((item, index) => (
-          <div key={index} className='w-1/4 mt-[20px]'>
+          <div key={index} className='flex items-center justify-center mt-[20px]'>
             <RelatedInsightItem time={item.time} title={item.title} description={item.description}/>
           </div>
         ))}

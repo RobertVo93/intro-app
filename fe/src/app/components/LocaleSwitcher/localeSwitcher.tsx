@@ -15,8 +15,8 @@ export default function LocaleSwitcher(){
       }}
     >
       {
-        languages.map(lang => 
-          <LocaleSwitcherItem lang={lang}/>
+        languages.map((lang, index) => 
+          <LocaleSwitcherItem lang={lang} key={index}/>
         )
       }
     </div>

@@ -1,12 +1,12 @@
 import { useTranslations } from "next-intl"
-import ComponentNameTag from "../componentNameTag";
+import ComponentNameTag from "./componentNameTag";
 
 export default function Overview(){
   const t = useTranslations('locations.overview')
   return(
     <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-[#002042] font-semibold">
       <ComponentNameTag name={t('overview')}/>
-      <div className="flex">
+      <div className="flex mt-[30px]">
         <div className="w-1/2 text-[36px] leading-[46px] not-italic mr-[50px]">
           {t('title')}
         </div>

@@ -5,7 +5,7 @@ import User from '@images/user.png'
 
 export default function ProfessionalsItem({name, position}: ProfessionalsType){
   return(
-    <Box className='w-[210px] h-full pb-3 flex flex-col border-solid bg-[#f5f2f2] cursor-pointer hover:shadow-md transition-shadow duration-500'
+    <Box className='w-[210px] h-[300px] pb-3 flex flex-col border-solid bg-[#f5f2f2] cursor-pointer hover:shadow-md transition-shadow duration-500'
       sx={{
         '&:hover': {
           '& #user-name': {
@@ -14,7 +14,7 @@ export default function ProfessionalsItem({name, position}: ProfessionalsType){
         }
       }}
     >
-      <Image src={User} alt='' className='w-[210px] h-[200px]'/>
+      <Image src={User} alt='' className='w-[210px] h-[250px]'/>
       <div 
         id='user-name' 
         className='w-full px-[10px] mt-[10px] text-[16px] font-semibold leading-[24px] text-[#222222] transition ease-in-out delay-150'

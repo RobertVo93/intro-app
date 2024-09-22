@@ -3,33 +3,35 @@ import { useState } from 'react';
 import PanelItem from './panelItem';
 import { NavbarPanelTransition } from '../transitions/navbarItemTransition';
 import LocaleSwitcher from '../localeSwitcher/localeSwitcher';
+import { useRouter } from '@/src/navigation';
 
 export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   const [showPanel, setShowPanel] = useState(false);
+  const router = useRouter()
 
   const displayedPanel = () => {
     switch(title) {
-      case('SERVICES'): return <ServicePanel />
-      case('LOCATIONS'): return <LocationPanel />
-      case('CAREERS'): return <CareersPanel />
-      case('ABOUT'): return <AboutPanel />
-      case('LANGUAGE'): return <LocaleSwitcher />
+      case('services'): return <ServicePanel />
+      case('locations'): return <LocationPanel />
+      case('careers'): return <CareersPanel />
+      case('about'): return <AboutPanel />
+      case('language'): return <LocaleSwitcher />
     }
   }
   return(
     <div 
-      className="py-3 px-3 relative text-white text-[15px] font-normal leading-5 normal-case cursor-pointer flex items-center justify-center"
+      className="h-[44px] py-3 px-3 relative text-white text-[15px] font-normal leading-5 normal-case cursor-pointer flex items-center justify-center"
       style={{
         textShadow: "2px 2px 3px black"
       }}
       onMouseEnter={() => setShowPanel(true)}
       onMouseLeave={() => setShowPanel(false)}
     >
-      {title}
+      <div className='uppercase'>{title}</div>
       {canExpand ? <KeyboardArrowDownIcon /> : null}
       {showPanel && canExpand && (
         <div
-          className='w-fit h-fit p-[40px] absolute top-[65px] bg-[#003166] shadow-lg cursor-default'
+          className='w-fit h-fit p-[40px] absolute top-[44px] bg-[#003166] shadow-lg cursor-default'
         >
           {
             <NavbarPanelTransition>

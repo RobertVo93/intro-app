@@ -1,6 +1,7 @@
 'use client'
 
 import WebNavbar from "./navBar/webNavbar";
+import PageFooter from "./pageFooter";
 import PageHeader from "./pageHeader/pageHeader";
 
 export default function AppWrapper({children}:{children: React.ReactNode}){
@@ -10,7 +11,7 @@ export default function AppWrapper({children}:{children: React.ReactNode}){
       <div className="flex flex-col">
         <PageHeader />
           {children}
-        <footer />
+        <PageFooter />
       </div>
     </div>
   )

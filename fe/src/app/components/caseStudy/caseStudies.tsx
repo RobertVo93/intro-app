@@ -3,10 +3,11 @@ import Image from 'next/image'
 import RemoveIcon from '@mui/icons-material/Remove';
 import CaseStudyItem from './item';
 import { useState, useEffect } from 'react';
-import CaseStudyTransition from '../../transitions/caseStudyTransition';
 import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
-import ComponentNameTag from '../../componentNameTag';
+import ComponentNameTag from '../componentNameTag';
+import CaseStudyTransition from '../transitions/caseStudyTransition';
+
 
 
 export default function CaseStudies() {

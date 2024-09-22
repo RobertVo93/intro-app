@@ -5,20 +5,38 @@ import Image from 'next/image'
 import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from 'react';
 import NavbarItem from './webNavbarItem';
+import { useRouter } from "@/src/navigation";
 
 const webNavbarItem: WebNavBarItemType[] = [
-  {title: "PROFESSIONALS"},
-  {title: "SERVICES", canExpand: true},
-  {title: "LOCATIONS", canExpand: true},
-  {title: "INSIGHTS"},
-  {title: "CAREERS", canExpand: true},
-  {title: "ABOUT", canExpand: true},
-  {title: "CONTACT"},
-  {title: "LANGUAGE", canExpand: true},
+  {title: "professionals"},
+  {title: "services", canExpand: true},
+  {title: "locations", canExpand: true},
+  {title: "insights"},
+  {title: "careers", canExpand: true},
+  {title: "about", canExpand: true},
+  {title: "contact"},
+  {title: "language", canExpand: true},
 ]
 
 export default function WebNavbar(){
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter()
+
+  const handleNavigate = (title:string) => {
+    // mock: some page not designed yet
+    if(title === 'services') {
+      router.push('/services')
+    } else if(title === 'locations') {
+      router.push('/')
+    } else if(title === 'about') {
+      router.push('/about')
+    } else if(title === 'contact') {
+      router.push('/contact')
+    } else {
+
+    }
+  }
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -36,7 +54,12 @@ export default function WebNavbar(){
         <Image src={PageLogo} alt='' className='w-[99.71px] h-[45.2px] '/>
         <div className='w-full flex justify-evenly pl-[200px]'>
           {webNavbarItem.map((item, index) => (
-            <NavbarItem key={index} title={item.title} canExpand={item.canExpand}/>
+            <div
+              className='flex items-center justify-center'
+              onClick={() => handleNavigate(item.title)}
+            >
+              <NavbarItem key={index} title={item.title} canExpand={item.canExpand}/>
+            </div>
           ))}
           <div className='h-[100px] flex items-center'>
             <SearchIcon className='w-[25px] h-[25px] text-white cursor-pointer'/>

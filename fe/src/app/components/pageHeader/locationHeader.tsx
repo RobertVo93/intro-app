@@ -14,7 +14,7 @@ const locations = [
   }
 ]
 
-export default function LocationHeaderComponent () {
+export default function LocationHeader () {
   return(
     <div className="w-full flex justify-start">
       {locations.map((loc, idx) => (

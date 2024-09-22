@@ -2,7 +2,8 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 import { Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import ComponentNameTag from '../componentNameTag';
+import ComponentNameTag from './componentNameTag';
+
 
 export default function Experience(){
   const t = useTranslations('locations.experience')
