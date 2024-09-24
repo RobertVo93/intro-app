@@ -5,7 +5,8 @@ export type Locales = typeof locales;
 
 export const pathnames: Pathnames<Locales> = {
   '/':'/',
-  // '/services':'/services'
+  '/automotive': '/services/automotive',
+  '/history': '/about/history',
 }
 
 export const localePrefix: LocalePrefix<Locales> = 'always'

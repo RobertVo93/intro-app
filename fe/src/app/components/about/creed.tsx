@@ -1,30 +1,19 @@
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
+import { useTranslations } from 'next-intl';
 
-const lawFirms = [
-  "We care.", 
-  "We value integrity.",
-  "We are knowledgeable, dependable, responsible, perceptive, practical, realistic, competitive, community oriented.",
-  "We have style, coupled with a sense of history",
-  "We are a business, yet family.",
-  "Clients are our guests."
-]
+export default function Creed({translationCollection}:{translationCollection:string}){
+  const t = useTranslations(translationCollection)
+  const lawFirmItems = t.raw("creed.lawFirm.items") as string[]
+  const facilitiesItems = t.raw("creed.facilities.items") as string[]
 
-const facilities = [
-  'Reflect: character, comfort, soul,  stability, elegance.',
-  'Impress yet relax.',
-  'Are efficient yet friendly.',
-  'Are professional and reassuring.'
-]
-
-export default function Creed(){
   return(
     <div className="w-full h-full flex text-[#002042]">
       <div className="w-1/2 h-full flex flex-col">
         <div className='text-[20px] font-bold leading-[26.6px]'>
-          As a Law Firm
+          {t("creed.lawFirm.title")}
         </div>
         {
-          lawFirms.map((item, index) => (
+          lawFirmItems.map((item, index) => (
             <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
               <FiberManualRecordIcon className='w-[10px] h-[10px] text-black'/> {item}
             </div>
@@ -33,10 +22,10 @@ export default function Creed(){
       </div>
       <div className="w-1/2 h-full flex flex-col">
         <div className='text-[20px] font-bold leading-[26.6px]'>
-          Our Facilities
+          {t("creed.facilities.title")}
         </div>
         {
-          facilities.map((item, index) => (
+          facilitiesItems.map((item, index) => (
             <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
               <FiberManualRecordIcon className='w-[10px] h-[10px] text-black'/> {item}
             </div>

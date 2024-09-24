@@ -1,16 +1,25 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import Contact from './footerMoreInfo/contact';
-import Careers from './footerMoreInfo/careers';
 import Networks from './footerMoreInfo/network';
+import { useTranslations } from 'next-intl';
+import ContactCareer from './footerMoreInfo/contactCareer';
 
 export default function PageFooter(){
+  const t = useTranslations("pageFooter")
   return(
     <div className='w-full h-full flex flex-col justify-center items-center'>
       <div className="w-4/5 h-[250px] flex pt-[80px] border-b">
-        <Contact />
-        <Careers />
+        <ContactCareer
+          title={t('contact.title')} 
+          description={t('contact.description')} 
+          buttonText={t('contact.buttonText')}
+        />
+        <ContactCareer
+          title={t('careers.title')} 
+          description={t('careers.description')} 
+          buttonText={t('careers.buttonText')}
+        />
         <Networks />
       </div>
 

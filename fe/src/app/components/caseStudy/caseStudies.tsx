@@ -1,34 +1,22 @@
 import CaseStudy from '@images/case-study.png'
 import Image from 'next/image'
-import RemoveIcon from '@mui/icons-material/Remove';
 import CaseStudyItem from './item';
 import { useState, useEffect } from 'react';
 import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from '../componentNameTag';
 import CaseStudyTransition from '../transitions/caseStudyTransition';
+import { usePathname } from '@/src/navigation';
 
+export default function CaseStudies({translationCollection}: {translationCollection: string}) {
+  const t = useTranslations(translationCollection)
+  const caseStudies = t.raw("caseStudies") as string[]
 
-
-export default function CaseStudies() {
-  const t = useTranslations('locations.caseStudies')
   const [page, setPage] = useState(1);
   const itemsPerPage = 1;
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
-
-  const caseStudies: CaseStudy[] = [
-    {
-      tag: "Vietnam | Capital Markets, Corporate/M&A",
-      title: t('title1'),
-      description: t('content1'),
-    },
-    {
-      tag: "Vietnam | Capital Markets, Corporate/M&A",
-      title: t('title2'),
-      description: t('content2'),}
-  ]
 
   const startIndex = (page - 1) * itemsPerPage;;
   const endIndex = startIndex + itemsPerPage;
@@ -60,12 +48,12 @@ export default function CaseStudies() {
           <ComponentNameTag name='CASE STUDIES' />
           <div className='w-[55%] h-[400px]'>
             {
-              paginatedItems.map((item, index) => (
-                <CaseStudyTransition key={page}>
+              paginatedItems.map((item: any, index: number) => (
+                <CaseStudyTransition key={index}>
                   <CaseStudyItem 
-                    tag={caseStudies[page-1].tag} 
-                    title={caseStudies[page-1].title} 
-                    description={caseStudies[page-1].description} 
+                    tag={item.tag} 
+                    title={item.title} 
+                    description={item.description} 
                   />
                 </CaseStudyTransition>
               ))

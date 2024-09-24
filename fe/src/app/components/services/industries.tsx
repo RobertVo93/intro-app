@@ -15,7 +15,6 @@ const fields: ServiceType[] = [
 ]
 
 export default function Industries(){
-  const t = useTranslations('locations.overview')
   return(
     <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-[#002042] font-semibold">
       <ComponentNameTag name='Industries'/>

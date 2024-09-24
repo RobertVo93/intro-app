@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import NavbarItem from './webNavbarItem';
 import { useRouter } from "@/src/navigation";
 
-const webNavbarItem: WebNavBarItemType[] = [
+const webNavbarItems: WebNavBarItemType[] = [
   {title: "professionals"},
   {title: "services", canExpand: true},
   {title: "locations", canExpand: true},
@@ -19,24 +19,7 @@ const webNavbarItem: WebNavBarItemType[] = [
 ]
 
 export default function WebNavbar(){
-  const [isScrolled, setIsScrolled] = useState(false);
-  const router = useRouter()
-
-  const handleNavigate = (title:string) => {
-    // mock: some page not designed yet
-    if(title === 'services') {
-      router.push('/services')
-    } else if(title === 'locations') {
-      router.push('/')
-    } else if(title === 'about') {
-      router.push('/about')
-    } else if(title === 'contact') {
-      router.push('/contact')
-    } else {
-
-    }
-  }
-  
+  const [isScrolled, setIsScrolled] = useState(false);  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -53,10 +36,9 @@ export default function WebNavbar(){
       <div className='w-full h-[100px] flex items-center'>
         <Image src={PageLogo} alt='' className='w-[99.71px] h-[45.2px] '/>
         <div className='w-full flex justify-evenly pl-[200px]'>
-          {webNavbarItem.map((item, index) => (
+          {webNavbarItems.map((item, index) => (
             <div
               className='flex items-center justify-center'
-              onClick={() => handleNavigate(item.title)}
             >
               <NavbarItem key={index} title={item.title} canExpand={item.canExpand}/>
             </div>

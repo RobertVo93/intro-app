@@ -6,12 +6,21 @@ import Experience from "../components/experience";
 import RelatedInsights from "../components/relatedInsights/relatedInsights";
 import Professionals from "../components/professionals/professionals";
 import OfficeLocation from "../components/locations/officeLocation/officeLocation";
+import { usePathname } from "@/src/navigation";
 
 export default function Home() {
+  const pathname = usePathname()
+  let translationCollection;
+  if(pathname == '/') {
+    translationCollection = 'locations'
+  } else {
+    translationCollection = pathname.replace('/', '')
+  }
+
   return (
     <div className="w-full h-full flex flex-col">
-      <Overview />
-      <CaseStudies />
+      <Overview  translationCollection={translationCollection}/>
+      <CaseStudies translationCollection={translationCollection}/>
       <Experience />
       <Professionals />
       <RelatedInsights />

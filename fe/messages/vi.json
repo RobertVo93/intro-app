@@ -1,30 +1,279 @@
 {
+  "pageFooter":{
+    "contact": {
+      "title": "Liên hệ",
+      "description": "Chúng tôi có bảy văn phòng tại sáu quốc gia trên khắp Đông Nam Á.",
+      "buttonText": "Liên hệ với chúng tôi"
+    },
+    "careers": {
+      "title": "Nghề nghiệp",
+      "description": "Chúng tôi luôn tìm kiếm những người tuyệt vời để phát triển đội ngũ tuyệt vời của mình.",
+      "buttonText": "Tham gia cùng chúng tôi"
+    }
+  },
+  "services": {
+    "header": {
+      "height": "500",
+      "backgroundImg": "https://image.vietnamnews.vn/uploadvnnews/Article/2019/4/26/7375_du-lich-quy-nhon-1.jpg",
+      "tag": "HOME // SERVICES",
+      "title": "Dịch vụ",
+      "description": "Tilleke & Gibbins cung cấp đầy đủ các dịch vụ pháp lý trên khắp Đông Nam Á, mang lại giá trị chiến lược thực sự để đáp ứng nhu cầu riêng của bạn. Cho dù là tạo điều kiện thuận lợi cho các giao dịch và hoạt động kinh doanh của bạn, thương mại hóa và bảo vệ quyền sở hữu trí tuệ của bạn hay bảo vệ quyền của bạn trong các tranh chấp, Tilleke & Gibbins đều có chuyên môn để làm việc với bạn trong mọi khía cạnh của doanh nghiệp bạn trong khu vực. Dựa trên kinh nghiệm sâu rộng trong ngành và bề rộng của chuyên môn pháp lý trong nước và quốc tế, chúng tôi điều chỉnh công việc của mình theo nhu cầu riêng của bạn trong mọi vấn đề mà chúng tôi tham gia, để đảm bảo rằng bạn có đối tác đáng tin cậy mà bạn cần để đạt được các mục tiêu thương mại của mình."  
+    }
+  },
+  "automotive": {
+    "header": {
+      "height": "600",
+      "backgroundImg": "https://filesblog.technavio.org/wp-content/uploads/2018/09/car-engine-manufacturers.jpg",
+      "tag": "HOME // SERVICES // AUTOMOTIVE",
+      "title": "Ô tô",
+      "description": ""
+    },
+    "overview": {
+      "overview": "Tổng quan",
+      "title": "Thúc đẩy tăng trưởng trên khắp Đông Nam Á cho các công ty hàng đầu trong ngành công nghiệp ô tô toàn cầu.",
+      "descriptions": [
+        "Tilleke & Gibbins đại diện cho khách hàng trên toàn bộ chuỗi giá trị ô tô, từ các nhà sản xuất ô tô và phụ tùng ô tô thượng nguồn đến các đại lý phân phối và bán ô tô hạ nguồn, cung cấp dịch vụ trọn gói cho toàn bộ các vấn đề pháp lý tại Đông Nam Á.", 
+        "Khi bắt đầu, nhóm đa ngành của chúng tôi giúp các công ty trong ngành ô tô xây dựng cấu trúc và triển khai các mô hình thâm nhập thị trường, bao gồm hỗ trợ các giao dịch M&A và liên doanh, xin giấy phép và ưu đãi đầu tư, bảo vệ các thiết kế, bằng sáng chế và nhãn hiệu có giá trị. Đối với các nhà sản xuất, chúng tôi cũng thường xuyên hỗ trợ mua đất và xây dựng nhà máy tại các khu công nghiệp và đặc khu kinh tế. Sau khi các công ty được thành lập và đi vào hoạt động, chúng tôi tiếp tục hợp tác chặt chẽ với khách hàng để duy trì sự tuân thủ theo quy định trên toàn khu vực, tư vấn về chống độc quyền và cạnh tranh thương mại, việc làm, xuất nhập khẩu, thuế và các vấn đề chung khác của công ty. Và khi xảy ra sự cố, chúng tôi cũng đại diện cho khách hàng trong ngành ô tô trong việc giải quyết tranh chấp, bao gồm cả kiện tụng thương mại và sở hữu trí tuệ, khiếu nại về trách nhiệm sản phẩm và các vụ kiện tập thể.",
+        "Chuyên môn pháp lý toàn diện của chúng tôi giúp khách hàng tận dụng các cơ hội thành công trong khu vực, thúc đẩy tăng trưởng trên khắp Đông Nam Á cho các công ty hàng đầu trong ngành công nghiệp ô tô toàn cầu."
+      ]
+    },
+    "caseStudies": [
+      {
+        "tag": "Thái Lan | Ô tô | Giải quyết tranh chấp",
+        "title": "Đại diện thành công trong vụ kiện thu hồi sản phẩm",
+        "description": "Đại diện cho công ty con tại Thái Lan của một hãng sản xuất ô tô lớn của Nhật Bản về một số khiếu nại liên quan đến túi khí bị cáo buộc là lỗi. Thông qua sự đại diện mạnh mẽ của chúng tôi, tất cả các trường hợp đều được giải quyết một cách chiến thuật với số tiền tượng trưng."
+      },
+      {
+        "tag": "Thái Lan | Ô tô | Bất động sản",
+        "title": "Mua đất 3,2 triệu đô la Mỹ để xây nhà máy tại Thái Lan",
+        "description": "Hỗ trợ Precious Dragon Technology (Thai) Limited, công ty con tại Thái Lan do một nhà sản xuất sản phẩm bình xịt ô tô niêm yết tại Hồng Kông sở hữu hoàn toàn, trong thương vụ mua đất trị giá 100 triệu THB (khoảng 3,2 triệu đô la Mỹ) tại Thái Lan."
+      },
+      {
+        "tag": "Toàn cầu | Ô tô | Bằng sáng chế, Nhãn hiệu",
+        "title": "Quản lý danh mục đầu tư IP toàn cầu trên 98 quốc gia trên toàn thế giới",
+        "description": "Được bổ nhiệm để quản lý toàn bộ danh mục IP toàn cầu cho Sundaram Clayton, một nhà cung cấp hàng đầu về đúc nhôm và magiê cho ngành công nghiệp ô tô. Đáng chú ý, danh mục này bao gồm hơn 2.000 nhãn hiệu và hơn 400 bằng sáng chế tại 98 quốc gia trên toàn thế giới."
+      }
+    ]
+  },
+  "experiences": [
+    "Tư vấn cho Volvo Group về các yếu tố của Thái Lan trong liên minh chiến lược toàn cầu với Isuzu Motors liên quan đến xe thương mại, bao gồm việc Isuzu Motor mua lại UD Trucks của Volvo Group với giá 243 tỷ yên.",
+    "Được thuê để hỗ trợ một nhà sản xuất ô tô châu Âu trong toàn bộ các vấn đề liên quan đến hoạt động của họ tại Thái Lan, bao gồm hỗ trợ mua đất và xây dựng nhà máy, xin giấy phép từ Ủy ban Đầu tư Thái Lan (BOI) và các cơ quan chính phủ khác, và tư vấn về các vấn đề thuế.",
+    "Được thuê để hỗ trợ một nhà sản xuất phụ tùng ô tô thành lập công ty con và nhà máy tại Việt Nam để sản xuất và xuất khẩu các sản phẩm an toàn ô tô. Trong số những việc khác, chúng tôi đã hỗ trợ khách hàng thành lập công ty, đàm phán và xem xét các tài liệu/thỏa thuận về đất đai, gặp gỡ chính quyền địa phương và chuẩn bị và nộp đơn xin Giấy chứng nhận đăng ký đầu tư và Giấy chứng nhận đăng ký doanh nghiệp.",
+    "Hỗ trợ một công ty sản xuất ô tô đa quốc gia của Hoa Kỳ bán hai nhà máy sản xuất của mình tại Thái Lan sau khi đóng cửa các hoạt động tại địa phương.",
+    "Được thuê bởi một công ty xe điện hàng đầu thế giới để cung cấp tư vấn pháp lý liên tục liên quan đến việc gia nhập và hoạt động liên tục của công ty tại thị trường Thái Lan. Nhóm của chúng tôi đã xử lý toàn bộ các công việc pháp lý cho khách hàng, bao gồm thành lập công ty, hưởng lợi theo Hiệp ước hữu nghị Thái Lan-Hoa Kỳ, tư vấn về việc xin giấy phép và ưu đãi từ BOI Thái Lan, nộp đơn xin giấy phép tiếp thị trực tiếp, chuẩn bị hợp đồng cho thuê đất và tòa nhà, và xem xét và bản địa hóa hơn 10 hợp đồng thương mại cho các hoạt động tại địa phương của mình.",
+    "Được nhiều công ty ô tô đa quốc gia hàng đầu thế giới thuê để hỗ trợ truy tố và thực thi các thiết kế, bằng sáng chế và nhãn hiệu trên khắp Đông Nam Á.",
+    "Tư vấn cho một công ty ô tô đa quốc gia của Anh về đề xuất cung cấp các giải pháp dựa trên eSim trong các phương tiện được bán tại Campuchia, Lào và Myanmar, bao gồm tư vấn sâu rộng về rủi ro thành lập cố định.",
+    "Thành công đại diện cho một nhà sản xuất ô tô hạng sang của Đức trong một vụ kiện phản đối nhãn hiệu liên lớp hiếm hoi chống lại đơn xin bảo hộ nhãn hiệu có sự tương tự gây nhầm lẫn với nhãn hiệu của khách hàng chúng tôi ở một lớp khác.",
+    "Đạt được phán quyết có lợi cho một nhà sản xuất ô tô Hoa Kỳ đối với bảy khiếu nại về trách nhiệm sản phẩm do nguyên đơn đưa ra tại Thái Lan. Nhờ vào các lập luận và bằng chứng của chúng tôi, tòa án đã phán quyết rằng các phương tiện này là sản phẩm an toàn theo Đạo luật Trách nhiệm Sản phẩm.",
+    "Tư vấn cho một nhà sản xuất xe điện nổi tiếng về mô hình kinh doanh phù hợp nhất để thâm nhập thị trường Việt Nam, bao gồm tư vấn về các vấn đề liên quan đến sản xuất và lưu trữ năng lượng tái tạo.",
+    "Được thuê để hỗ trợ một tập đoàn ô tô đa quốc gia của Nhật Bản trong việc xem xét và sửa đổi thỏa thuận phân phối mẫu của mình, tạo thành cơ sở cho khuôn khổ phân phối với đối tác địa phương tại Lào.",
+    "Thành công đại diện cho một nhà sản xuất ô tô hạng sang của Châu Âu trong việc khởi kiện dân sự chống lại một đại lý ô tô cũ không liên kết của Thái Lan vì sử dụng trái phép tên thương mại, nhãn hiệu và nhãn hiệu dịch vụ của khách hàng của chúng tôi.",
+    "Tư vấn cho một nhà sản xuất phụ tùng ô tô của Đức về các lựa chọn tài chính khác nhau để có thể mua lại, thông qua một công ty mẹ, một công ty mục tiêu của Việt Nam, bao gồm tư vấn về các yêu cầu pháp lý của Việt Nam về việc chuyển tiền để tài trợ hoạt động thông qua các khoản vay của cổ đông hoặc hợp nhất tiền mặt.",
+    "Thành công đại diện cho BMW trong một vụ kiện tranh chấp tên miền chống lại một cá nhân người Việt Nam đã đăng ký ba tên miền kết hợp nhãn hiệu nổi tiếng BMW của khách hàng của chúng tôi. Lập luận của chúng tôi đã khiến Tòa án TP.HCM ra lệnh cho bên chiếm đoạt mạng phải giao nộp tên miền cho khách hàng của chúng tôi và trả phí luật sư.",
+    "Đại diện cho một nhà sản xuất ô tô Nhật Bản để bảo vệ chống lại khiếu nại về trách nhiệm sản phẩm liên quan đến túi khí không bung ra. Nhờ sự đại diện của chúng tôi, khiếu nại đã được giải quyết có lợi cho khách hàng của chúng tôi tại tòa án và khách hàng không phải bắt đầu thu hồi sản phẩm."
+  ],
   "locations": {
+    "header": {
+      "height": "475",
+      "backgroundImg": "https://image.vietnam.travel/sites/default/files/styles/article_photo_large/public/2017-11/things%20to%20do%20in%20hcmc-3.jpg?itok=7TX7muVt",
+      "tag": "HOME // LOCATIONS // VIETNAM",
+      "title": "Vietnam",
+      "description": ""
+    },
     "overview": {
       "overview": "Tổng quan",
       "title": "Dịch vụ pháp lý đạt giải thưởng tại một trong những nền kinh tế phát triển nhanh nhất thế giới.",
-      "description1": "Tilleke & Gibbins đã có mặt tại Việt Nam từ năm 1992, khi trở thành công ty luật nước ngoài đầu tiên tại Việt Nam được cấp giấy phép thành lập văn phòng đại diện. Kể từ đó, với các văn phòng tại Hà Nội và Thành phố Hồ Chí Minh, công ty chúng tôi đã phát triển cùng với nền kinh tế năng động của Việt Nam, giúp các doanh nghiệp tận dụng các cơ hội thương mại và đầu tư dồi dào được thúc đẩy bởi các cải cách kinh tế và chính trị của đất nước, cũng như việc gia nhập ASEAN, WTO và các hiệp định song phương và đa phương như CPTPP và EVFTA.",
-      "description2": "Hiện nay, chúng tôi là một trong những công ty luật lớn nhất và nổi tiếng nhất tại Việt Nam, cung cấp đầy đủ các dịch vụ pháp lý doanh nghiệp trong các lĩnh vực giao dịch thương mại và M&A, lao động và việc làm, bất động sản, công nghệ, nhượng quyền thương mại, v.v. Hoạt động sở hữu trí tuệ từng đoạt giải thưởng của chúng tôi, được các cuộc khảo sát và danh bạ toàn cầu công nhận rộng rãi là một trong những hoạt động tốt nhất tại Việt Nam, tư vấn cho khách hàng về đăng ký, thực thi và thương mại hóa IP, và hợp tác với công ty luật liên kết địa phương T&G Law Firm LLC (TGVN), một công ty luật và đại lý IP được cấp phép, để thực hiện nộp đơn đăng ký IP tại Việt Nam."
+      "descriptions": [
+        "Tilleke & Gibbins đã có mặt tại Việt Nam từ năm 1992, khi trở thành công ty luật nước ngoài đầu tiên tại Việt Nam được cấp giấy phép thành lập văn phòng đại diện. Kể từ đó, với các văn phòng tại Hà Nội và Thành phố Hồ Chí Minh, công ty chúng tôi đã phát triển cùng với nền kinh tế năng động của Việt Nam, giúp các doanh nghiệp tận dụng các cơ hội thương mại và đầu tư dồi dào được thúc đẩy bởi các cải cách kinh tế và chính trị của đất nước, cũng như việc gia nhập ASEAN, WTO và các hiệp định song phương và đa phương như CPTPP và EVFTA.",
+        "Chúng tôi hiện là một trong những công ty luật lớn nhất và nổi tiếng nhất tại Việt Nam, cung cấp đầy đủ các dịch vụ pháp lý doanh nghiệp trong các lĩnh vực giao dịch thương mại và M&A, lao động và việc làm, bất động sản, công nghệ, nhượng quyền thương mại, v.v. Hoạt động sở hữu trí tuệ từng đoạt giải thưởng của chúng tôi, được các cuộc khảo sát và danh bạ toàn cầu công nhận rộng rãi là một trong những hoạt động tốt nhất tại Việt Nam, tư vấn cho khách hàng về đăng ký, thực thi và thương mại hóa SHTT, đồng thời hợp tác với công ty luật liên kết địa phương T&G Law Firm LLC (TGVN), một công ty luật và đại lý SHTT được cấp phép, để thực hiện nộp đơn SHTT tại Việt Nam."
+      ]
     },
-    "caseStudies": {
-      "title1": "Đại diện cho VinHMS trong việc hoán đổi cổ phiếu phức tạp với một công ty có trụ sở tại Hoa Kỳ",
-      "content1": "Là cố vấn chính cho VinHMS trong một giao dịch hoán đổi cổ phiếu phức tạp với Vemanti Group (OTCQB: VNMT) có trụ sở tại Hoa Kỳ, phối hợp với Morgan Lewis để tạo điều kiện thuận lợi cho các yếu tố xuyên biên giới của thỏa thuận. Kết quả của giao dịch này là VinHMS sẽ tiếp tục là công ty con do Vemanti Group sở hữu hoàn toàn, với Tổng giám đốc điều hành hiện tại Hoang (Eric) Nguyen được bổ nhiệm làm Tổng giám đốc điều hành mới của Vemanti.",
-      "title2": "Hỗ trợ công ty khởi nghiệp công nghệ khu vực Carousell trong hoạt động M&A lớn tại Việt Nam",
-      "content2": "Hỗ trợ Carousell trong công tác thẩm định, chuẩn bị tài liệu và nộp hồ sơ lên ​​cơ quan cấp phép của Việt Nam liên quan đến thương vụ M&A với công ty con của một công ty viễn thông Na Uy, một thỏa thuận định giá công ty sau khi kết hợp ở mức 850 triệu đô la Mỹ."    
-    },
+    "caseStudies": [
+      {
+        "tag": "Việt Nam | Công nghệ | Doanh nghiệp/M&A",
+        "title": "Đại diện cho VinHMS trong việc hoán đổi cổ phiếu phức tạp với một công ty có trụ sở tại Hoa Kỳ",
+        "description": "Là cố vấn chính cho VinHMS trong một giao dịch hoán đổi cổ phiếu phức tạp với Vemanti Group (OTCQB: VNMT) có trụ sở tại Hoa Kỳ, phối hợp với Morgan Lewis để tạo điều kiện thuận lợi cho các yếu tố xuyên biên giới của thỏa thuận. Kết quả của giao dịch này là VinHMS sẽ tiếp tục là công ty con do Vemanti Group sở hữu hoàn toàn, với Tổng giám đốc điều hành hiện tại Hoang (Eric) Nguyen được bổ nhiệm làm Tổng giám đốc điều hành mới của Vemanti."
+      },
+      {
+        "tag": "Việt Nam | Công nghệ | Doanh nghiệp/M&A",
+        "title": "Hỗ trợ công ty khởi nghiệp công nghệ khu vực Carousell trong hoạt động M&A lớn tại Việt Nam",
+        "description": "Hỗ trợ Carousell trong công tác thẩm định, chuẩn bị tài liệu và nộp hồ sơ lên ​​cơ quan cấp phép của Việt Nam liên quan đến thương vụ M&A với công ty con của một công ty viễn thông Na Uy, một thỏa thuận định giá công ty sau khi kết hợp ở mức 850 triệu đô la Mỹ."
+      }
+    ],
     "experience": [
-      "Hỗ trợ một nhà điều hành thị trường thương mại điện tử có trụ sở tại Singapore với việc thẩm định pháp lý, chuẩn bị hồ sơ và nộp hồ sơ liên quan đến việc mua lại/sáp nhập với một công ty phân loại trực tuyến, một thỏa thuận định giá công ty kết hợp ở mức 850 triệu USD.",
-      "Cung cấp hỗ trợ thường xuyên cho một tập đoàn mạng xã hội toàn cầu (cả trực tiếp và hợp tác với các công ty luật khác trên toàn thế giới) với một loạt các vấn đề pháp lý liên quan đến hoạt động đang diễn ra và các sáng kiến mới của công ty tại Việt Nam, bao gồm việc rà soát hợp đồng và thỏa thuận người dùng, và tư vấn về nhiều vấn đề liên quan đến quyền riêng tư dữ liệu, xử lý và bảo vệ dữ liệu.",
-      "Hỗ trợ một công ty CNTT Ấn Độ thành công trong việc đàm phán giải quyết tranh chấp với một ngân hàng Việt Nam trong một tranh chấp hợp đồng trị giá 10 triệu USD liên quan đến việc cung cấp phần mềm ngân hàng được cấp phép và dịch vụ hỗ trợ liên quan của khách hàng.",
-      "Thành công xử lý phần liên quan đến Việt Nam trong một trong những vụ sáp nhập toàn cầu lớn nhất năm 2017, hỗ trợ một công ty sản xuất hóa chất đa quốc gia trong việc mua lại tài sản của công ty con Việt Nam thuộc một công ty hóa chất khác, như một phần của chuỗi giao dịch từ vụ sáp nhập toàn cầu.",
-      "Tư vấn cho một công ty năng lượng mặt trời Trung Quốc và chuẩn bị hồ sơ đăng ký thành lập pháp nhân địa phương để tham gia vào sản xuất, gia công và xuất khẩu các tấm pin mặt trời và mô-đun tại Việt Nam.",
-      "Hỗ trợ một công ty công nghệ sinh học của Anh trong cuộc điều tra tuân thủ liên quan đến ba nhân viên tại Việt Nam. Chúng tôi đã xem xét hàng ngàn tài liệu để phát hiện sai phạm và đề xuất các biện pháp khắc phục.",
-      "Tư vấn cho một tập đoàn dịch vụ tài chính Mỹ về các yêu cầu quy định và dự thảo luật liên quan đến an ninh mạng, dịch vụ thanh toán và mạng thông tin.",
-      "Thường xuyên tư vấn cho khách hàng về các cuộc đàm phán, tranh chấp và chấm dứt hợp đồng lao động, cả trong các vụ kiện hiện tại và nhằm giảm thiểu rủi ro kiện tụng.",
-      "Phục vụ như cố vấn pháp lý bên ngoài chính cho tất cả các vấn đề pháp lý tại Việt Nam cho một công ty dược phẩm đa quốc gia. Công việc của chúng tôi bao gồm rà soát hợp đồng, hướng dẫn về các vấn đề lao động và tư vấn về các vấn đề pháp lý và quy định của Việt Nam.",
-      "Đại diện cho một nhà sản xuất hàng đầu thế giới về các sản phẩm mã hóa, in ấn và đánh dấu bằng laser và giành chiến thắng trong một vụ kiện mang tính tiền lệ, trong đó tòa án đã trao mức phí luật sư kỷ lục cho nguyên đơn. Tạp chí Managing Intellectual Property đã chọn vụ thắng kiện này là Vụ án của năm cho khu vực Đông Nam Á vào năm 2014."
+      "Hỗ trợ một đơn vị điều hành thị trường thương mại điện tử có trụ sở tại Singapore trong quá trình thẩm định, chuẩn bị hồ sơ và nộp hồ sơ liên quan đến việc mua lại/sáp nhập với một công ty rao vặt trực tuyến, một thỏa thuận định giá công ty kết hợp ở mức 850 triệu đô la Mỹ.",
+      "Cung cấp hỗ trợ thường xuyên cho một công ty truyền thông xã hội toàn cầu (trực tiếp và hợp tác với các công ty luật khác trên toàn thế giới) với luồng vấn đề pháp lý liên tục liên quan đến hoạt động đang diễn ra của công ty và các sáng kiến ​​mới tại Việt Nam, bao gồm xem xét hợp đồng và thỏa thuận của người dùng, và tư vấn về nhiều vấn đề liên quan đến quyền riêng tư, xử lý và bảo vệ dữ liệu.",
+      "Hỗ trợ một công ty CNTT của Ấn Độ đàm phán thành công một thỏa thuận giải quyết với một ngân hàng Việt Nam trong tranh chấp hợp đồng trị giá 10 triệu đô la Mỹ liên quan đến việc khách hàng cung cấp phần mềm ngân hàng được cấp phép và các dịch vụ hỗ trợ liên quan.",
+      "Xử lý thành công phần Việt Nam của một trong những vụ sáp nhập toàn cầu lớn nhất năm 2017, hỗ trợ một công ty sản xuất hóa chất đa quốc gia trong việc mua lại tài sản của công ty con tại Việt Nam của một công ty hóa chất khác như một phần của chuỗi giao dịch phát sinh từ một vụ sáp nhập trên toàn thế giới.",
+      "Tư vấn cho một công ty năng lượng mặt trời của Trung Quốc và chuẩn bị hồ sơ đăng ký để thành lập pháp nhân địa phương tham gia vào sản xuất, chế biến và xuất khẩu tấm pin và mô-đun năng lượng mặt trời tại Việt Nam.",
+      "Hỗ trợ một công ty công nghệ sinh học của Anh trong cuộc điều tra về việc tuân thủ của ba nhân viên tại Việt Nam. Chúng tôi đã xem xét hàng nghìn tài liệu để tìm ra hành vi sai trái và đề xuất biện pháp khắc phục.",
+      "Tư vấn cho một công ty dịch vụ tài chính lớn của Mỹ về các yêu cầu theo quy định và dự thảo luật liên quan đến an ninh mạng, dịch vụ thanh toán và mạng thông tin.",
+      "Thường xuyên tư vấn cho khách hàng về các cuộc đàm phán, tranh chấp và chấm dứt hợp đồng của nhân viên liên quan đến các vụ kiện tụng hiện tại và trong nỗ lực giảm thiểu rủi ro kiện tụng.",
+      "Làm cố vấn bên ngoài chính về mọi vấn đề pháp lý tại Việt Nam cho một công ty dược phẩm đa quốc gia. Công việc của chúng tôi bao gồm xem xét hợp đồng, hướng dẫn về các vấn đề lao động và tư vấn về các vấn đề pháp lý và bối cảnh pháp lý của Việt Nam.",
+      "Đại diện cho một nhà sản xuất hàng đầu thế giới về các sản phẩm mã hóa, in ấn và đánh dấu bằng laser và giành được chiến thắng mang tính tiền lệ khi tòa án trao giải thưởng kỷ lục về phí luật sư cho nguyên đơn. Tạp chí Managing Intellectual Property đã chọn chiến thắng này là Vụ án của năm tại Đông Nam Á vào năm 2014."
     ]
+  },
+  "about": {
+    "header": {
+      "height": "475",
+      "backgroundImg": "https://officebanao.com/wp-content/uploads/2024/03/modern-office-room-with-white-walls.jpg",
+      "tag": "HOME // ABOUT",
+      "title": "Công ty luật hàng đầu Đông Nam Á",
+      "description": "Tilleke & Gibbins là công ty luật cung cấp dịch vụ trọn gói hàng đầu Đông Nam Á, tự hào phục vụ các doanh nghiệp quốc tế và địa phương trên sáu quốc gia. Chúng tôi cam kết giúp khách hàng đạt được thành công bền vững trong khu vực, hợp tác với họ để cung cấp chuyên môn pháp lý vô song, bắt nguồn từ tính thương mại thực tế."
+    },
+    "overview": {
+      "overview": "Về",
+      "title": "Trọng tâm thương mại, hiểu biết địa phương và dịch vụ đặc biệt giúp chúng tôi trở thành công ty luật cung cấp dịch vụ đầy đủ được lựa chọn tại Đông Nam Á.",
+      "descriptions": [
+        "Tilleke & Gibbins là công ty luật hàng đầu khu vực Đông Nam Á với hơn 250 luật sư và cố vấn hành nghề tại Campuchia, Indonesia, Lào, Myanmar, Thái Lan và Việt Nam. Chúng tôi cung cấp các giải pháp pháp lý trọn gói cho các nhà đầu tư hàng đầu và các công ty tăng trưởng cao thúc đẩy sự mở rộng kinh tế tại Châu Á.",
+        "Được thành lập tại Bangkok vào năm 1890, kể từ đó chúng tôi đã phát triển thành công ty luật độc lập lớn nhất tại Thái Lan và là công ty quốc tế hàng đầu trên khắp Đông Nam Á nhờ trọng tâm thương mại, kiến ​​thức địa phương và dịch vụ đặc biệt.",
+        "Tập trung thương mại. Thành công lâu dài của bạn là ưu tiên hàng đầu của chúng tôi và chúng tôi dành thời gian để tìm hiểu về văn hóa doanh nghiệp, nhu cầu hoạt động và mục tiêu thương mại độc đáo của bạn, để xác định cách chúng tôi có thể cung cấp giá trị tốt nhất cho tổ chức của bạn. Từ kinh nghiệm chuyên môn cao trong các lĩnh vực cụ thể đến hiểu biết sâu sắc về doanh nghiệp của bạn, nhóm của chúng tôi cam kết cung cấp tư vấn pháp lý chất lượng cao, được điều chỉnh để đáp ứng nhu cầu riêng của bạn, nhằm giúp bạn thành công.",
+        "Kiến thức địa phương. Bạn cần một đối tác địa phương để giúp bạn điều hướng các thị trường mới nổi, nếu không, có thể đặt ra những thách thức xa lạ. Chúng tôi mang đến góc nhìn quốc tế, nhưng chúng tôi có gốc rễ sâu xa tại mỗi khu vực pháp lý mà chúng tôi hành nghề. Chúng tôi biết những người chơi địa phương trong ngành của bạn, có thể xác định các quan hệ đối tác tư nhân có lợi và các lĩnh vực hợp tác với chính phủ, và đóng vai trò là cánh cổng giúp bạn vượt qua rào cản ngôn ngữ và văn hóa.",
+        "Dịch vụ phi thường. Nhóm của chúng tôi tự hào cung cấp dịch vụ phi thường vượt quá mong đợi của bạn. Khi làm việc với chúng tôi, bạn có thể mong đợi có một nhóm cố vấn hợp tác cung cấp cho bạn lời khuyên rõ ràng và thiết thực; những người phản hồi trong mọi giao tiếp của chúng tôi; những người đại diện cho bạn một cách chính trực; và những người áp dụng cách tiếp cận sáng tạo trong mọi việc chúng tôi làm.",
+        "Vì những lý do này và nhiều lý do khác, các công ty thành công nhất thế giới tin tưởng chúng tôi với các giao dịch lớn nhất, sở hữu trí tuệ có giá trị nhất và các vấn đề pháp lý quan trọng nhất của họ."
+      ]
+    },
+    "caseStudies": [
+      {
+        "tag": "Thái Lan | Ô tô | Giải quyết tranh chấp",
+        "title": "Đại diện thành công trong vụ kiện thu hồi sản phẩm",
+        "description": "Đại diện cho công ty con tại Thái Lan của một hãng sản xuất ô tô lớn của Nhật Bản về một số khiếu nại liên quan đến túi khí bị cáo buộc là lỗi. Thông qua sự đại diện mạnh mẽ của chúng tôi, tất cả các trường hợp đều được giải quyết một cách chiến thuật với số tiền tượng trưng."
+      },
+      {
+        "tag": "Thái Lan | Ô tô | Bất động sản",
+        "title": "Mua đất 3,2 triệu đô la Mỹ để xây nhà máy tại Thái Lan",
+        "description": "Hỗ trợ Precious Dragon Technology (Thai) Limited, công ty con tại Thái Lan do một nhà sản xuất sản phẩm bình xịt ô tô niêm yết tại Hồng Kông sở hữu hoàn toàn, trong thương vụ mua đất trị giá 100 triệu THB (khoảng 3,2 triệu đô la Mỹ) tại Thái Lan."
+      },
+      {
+        "tag": "Toàn cầu | Ô tô | Bằng sáng chế, Nhãn hiệu",
+        "title": "Quản lý danh mục sở hữu trí tuệ toàn cầu tại 98 quốc gia trên toàn thế giới",
+        "description": "Được bổ nhiệm để quản lý toàn bộ danh mục IP toàn cầu cho Sundaram Clayton, một nhà cung cấp hàng đầu về đúc nhôm và magiê cho ngành công nghiệp ô tô. Đáng chú ý, danh mục này bao gồm hơn 2.000 nhãn hiệu và hơn 400 bằng sáng chế tại 98 quốc gia trên toàn thế giới."
+      }
+    ],
+    "codeOfProduct": {
+      "tag": "Chúng tôi chịu trách nhiệm trong mọi việc chúng tôi làm",
+      "title": "Bộ Quy tắc ứng xử kinh doanh của chúng tôi nhằm mục đích giúp định hướng cho tất cả các bên liên quan về trách nhiệm của chúng tôi và các tiêu chuẩn mà chúng tôi phải duy trì.",
+      "descriptions": [
+        "Tất cả chúng tôi tại Tilleke & Gibbins đều có trách nhiệm duy trì các giá trị cốt lõi thúc đẩy thành công của công ty. Giá trị quan trọng nhất trong số các giá trị này là tính chính trực. Khách hàng tin tưởng chúng tôi sẽ hành động với sự chính trực trong việc xử lý các vấn đề pháp lý nhạy cảm nhất của họ và giải quyết vấn đề kinh doanh phức tạp nhất của họ.",
+        "Bằng cách hành động với sự chính trực và làm mọi việc theo đúng cách, mọi người trong công ty—từ năm 1890 cho đến nay—đã góp phần xây dựng một công ty vững mạnh với danh tiếng vượt trội về kiến ​​thức pháp lý và dịch vụ khách hàng. Bộ quy tắc ứng xử trong kinh doanh của chúng tôi đóng vai trò là bản tóm tắt về hành vi mong đợi của chúng tôi và là lời nhắc nhở về nghĩa vụ của chúng tôi đối với khách hàng, đối với cộng đồng và đối với chính chúng tôi."
+      ]
+    },
+    "vision": {
+      "title": "Tầm nhìn của chúng tôi",
+      "description": "Mục tiêu của chúng tôi là trở thành công ty luật cung cấp dịch vụ đầy đủ hàng đầu khu vực phục vụ doanh nghiệp quốc tế và xã hội dân sự"
+    },
+    "mission": {
+      "title": "Sứ mệnh của chúng tôi",
+      "description": "Sứ mệnh của chúng tôi là cung cấp các giải pháp pháp lý thực tế, dựa trên kiến ​​thức, đáng tin cậy và sáng tạo cho những người chúng tôi phục vụ. Thước đo sứ mệnh của chúng tôi nằm ở việc thực hiện nó."
+    },
+    "creed": {
+      "lawFirm": {
+        "title": "Là một công ty luật",
+        "items": [
+          "Chúng tôi quan tâm.",
+          "Chúng tôi coi trọng sự chính trực.",
+          "Chúng tôi hiểu biết, đáng tin cậy, có trách nhiệm, nhạy bén, thực tế, cạnh tranh, hướng đến cộng đồng.",
+          "Chúng tôi có phong cách, kết hợp với ý thức về lịch sử",
+          "Chúng tôi là một doanh nghiệp, nhưng là một gia đình.",
+          "Khách hàng là khách của chúng tôi."
+        ]
+      }, 
+      "facilities": {
+        "title": "Cơ sở vật chất của chúng tôi",
+        "items": [
+          "Phản ánh: tính cách, sự thoải mái, tâm hồn, sự ổn định, sự thanh lịch.",
+          "Gây ấn tượng nhưng vẫn thư giãn.",
+          "Hiệu quả nhưng vẫn thân thiện.",
+          "Chuyên nghiệp và đáng tin cậy."
+        ]
+      }
+    },
+    "aboutItems": [
+      {
+        "img": "https://dualcreditathome.com/wp-content/uploads/2014/02/history.jpg",
+        "title": "Lịch sử",
+        "description": "Tilleke & Gibbins đã hỗ trợ khách hàng kinh doanh tại Đông Nam Á kể từ năm 1890 và đã phát triển thành một trong những công ty luật độc lập lớn nhất và được kính trọng nhất trong khu vực."
+      },
+      {
+        "img": "https://www.capgemini.com/us-en/wp-content/uploads/sites/4/2021/09/Capgemini-Business-Services-Awards-and-Rankings-811x450-1.jpg",
+        "title": "Giải thưởng & Xếp hạng",
+        "description": "Được các danh bạ pháp lý quốc tế liên tục công nhận là một trong những công ty luật độc lập tốt nhất châu Á, Tilleke & Gibbins đã nhận được 15 giải thưởng Công ty của năm chỉ riêng trong năm 2020."
+      },
+      {
+        "img": "https://media.licdn.com/dms/image/D5612AQGv9P2g8lISxw/article-cover_image-shrink_720_1280/0/1719401740317?e=2147483647&v=beta&t=bw6BhHnvwCaUAyRQByLo_XiILWdzlvKi2l2tcErYN8U",
+        "title": "Làm việc thiện nguyện",
+        "description": "We provide comprehensive pro bono services to charitable organizations, working closely with internationally well-regarded pro bono organizations such as Thomson Reuters’ Trustlaw and the Lex Mundi Foundation."
+      },
+      {
+        "img": "https://logowik.com/content/uploads/images/crs8088.logowik.com.webp",
+        "title": "CRS",
+        "description": "Tập trung vào giáo dục, môi trường và sức khỏe con người, tại Tilleke & Gibbins, chúng tôi luôn tận tâm cống hiến cho cộng đồng nơi chúng tôi tự hào được sinh sống và làm việc."
+      },
+      {
+        "img": "https://garymjones.com/wp-content/uploads/2021/05/bangkok-counterfeit-9-1-uai-2064x1210.jpg",
+        "title": "Bảo tàng hàng giả",
+        "description": "Bộ sưu tập hơn 4.000 sản phẩm giả của Tilleke & Gibbins là một trong những bộ sưu tập lớn nhất cùng loại trên thế giới. Chỉ mở cửa cho cá nhân, nhóm và phương tiện truyền thông theo lịch hẹn."
+      },
+      {
+        "img": "https://www.ualberta.ca/en/museums/media-library/images/museum-collections/clothing-textiles/cltx05webres144artifacts1.jpg",
+        "title": "Bộ sưu tập hàng dệt may",
+        "description": "Công ty là nơi lưu giữ hơn 2.000 sản phẩm dệt may chất lượng bảo tàng đại diện cho các nền văn hóa đa dạng của Đông Nam Á, được thu thập, trưng bày và bảo quản gần với khu vực địa lý nơi chúng được tạo ra."
+      }
+    ]
+  },
+  "history": {
+    "header": {
+      "height": "475",
+      "backgroundImg": "https://cdn.lawnet.vn//uploads/NewsThumbnail/2022/07/15/093956history(1).png",
+      "tag": "HOME // HISTORY",
+      "title": "Liên hệ",
+      "description": "Chúng tôi hoan nghênh các câu hỏi và bình luận của bạn. Thông tin liên hệ đầy đủ cho tất cả các văn phòng của chúng tôi được nêu bên dưới. Bạn cũng có thể thoải mái tìm kiếm chuyên gia của chúng tôi cho một người cụ thể hoặc chỉ cần liên hệ với chúng tôi và chúng tôi sẽ vui lòng kết nối bạn với đúng người."
+    },
+    "overview": {
+      "overview": "Về",
+      "title": "Khi đặt chân lên đất Xiêm vào năm 1890, William Alfred Goone Tilleke không hề biết rằng ông sẽ thành lập một công ty luật tồn tại được hơn 130 năm.",
+      "descriptions": [
+        "Năm 1890, William Alfred Goone Tilleke, một luật sư người Singhalese 31 tuổi, đã đến Xiêm (nay là Thái Lan) để xây dựng sự nghiệp luật sư của mình. Trong vòng bốn năm, Tilleke đã tạo dựng được tên tuổi quốc tế cho mình thông qua việc bảo vệ thành công cho viên chỉ huy quân đội Xiêm Phra Yod Muang Khwang, người bị truy tố vì tội giết một sĩ quan Pháp theo hiệp ước Pháp-Xiêm.",
+        "Trong suốt đầu thế kỷ XX, công ty được quản lý bởi một số đối tác người Anh, bao gồm Ralph Gibbins, Samuel Brighouse, Reginald Atkinson và Victor Jaques. Giống như Tilleke, mỗi đối tác đều đóng vai trò quan trọng không chỉ trong thành công của công ty mà còn trong sự phát triển của hệ thống pháp luật Thái Lan. Các đối tác của công ty đã phục vụ Vương quốc Xiêm ở nhiều cương vị, bao gồm cả cố vấn cho Bộ Tư pháp và Hoàng gia Thái Lan.",
+        "Sau Thế chiến II, Tilleke & Gibbins đã được các luật sư người Mỹ Albert và Freda Lyman mua lại. Cùng với đối tác người Thái của họ, Roland (sau này là Rojvit) Periera, Lymans giám sát sự phát triển của cơ sở khách hàng quốc tế của công ty, đồng thời đảm bảo rằng công ty vẫn là trụ cột của xã hội Thái Lan bằng cách đóng góp vào việc thành lập Hiệp hội Hoa Kỳ tại Thái Lan (nay là Phòng Thương mại Hoa Kỳ) và Sở Giao dịch Chứng khoán Bangkok (nay là Sở Giao dịch Chứng khoán Thái Lan).",
+        "Vào những năm 1980, David Lyman kế nhiệm cha mình làm đối tác cấp cao của công ty. Trong thời gian này, công ty đã mở rộng ra quốc tế, với việc mở văn phòng tại Việt Nam và trở thành thành viên của các mạng lưới công ty luật quốc tế hàng đầu, bắt đầu với Lex Mundi vào năm 1989. Năm 2006, Tilleke & Gibbins bổ nhiệm Darani Vachanavuttivong và Tiziana Sucharitkul làm Đối tác quản lý của công ty.",
+        "Lịch sử của Tilleke & Gibbins là lịch sử mà chúng tôi chia sẻ với khách hàng, cộng đồng của mình và Vương quốc Thái Lan."
+      ]
+    },
+    "timeStamps": [
+      {
+        "time": "1890",
+        "img": "https://www.tilleke.com/wp-content/uploads/2019/09/resize-carpe-diem-1890.jpg",
+        "title": "Tilleke đến Xiêm",
+        "content": "Khi luật sư trẻ tuổi William Alfred Goone Tilleke đến Xiêm vào năm 1890, tương lai của ông đã được định đoạt một cách tinh tế. Đã rất thành đạt, chàng trai người Singhalese 31 tuổi này đã rời bỏ sự an toàn và uy tín được hưởng ở quê hương Ceylon để tìm kiếm vận may ở Xiêm, quốc gia độc lập cuối cùng còn tồn tại ở Đông Nam Á. Tilleke đã đặt chân lên bờ biển Bangkok để bước vào một cuộc sống không chỉ hứa hẹn mà còn có cơ hội, nếu nắm bắt chắc chắn, để đóng một vai trò quan trọng trong sự phát triển của Xiêm hiện đại."
+      },
+      {
+        "time": "1894",
+        "img": "https://www.tilleke.com/wp-content/uploads/2019/09/Carpe-Diem_1894.jpg",
+        "title": "Phra Yod Muang Khwang Trial",
+        "content": "William Alfred Goone Tilleke đã tạo dựng tên tuổi quốc tế cho mình với tư cách là luật sư bào chữa cho vị chỉ huy quân đội Xiêm Phra Yod Muang Khwang—người bị truy tố vì tội giết một sĩ quan Pháp theo yêu cầu của hiệp ước Pháp-Xiêm. Vào cuối cuộc thẩm vấn chéo xuất sắc của Tilleke, lời khai của nhân chứng truy tố chính, Bun Chan, nghe có vẻ không thuyết phục. Cả bảy thẩm phán đều đưa ra phán quyết Không có tội."
+      },
+      {
+        "time": "1902",
+        "img": "https://www.tilleke.com/wp-content/uploads/2019/09/Carpe-Diem_1906.jpg",
+        "title": "Gibbins gia nhập công ty",
+        "content":"Công ty hợp danh Tilleke & Gibbins, có sự tham gia của Ralph Gibbins vào khoảng năm 1902, đã tham gia vào một số vụ án nổi tiếng, bao gồm một phiên tòa kéo dài liên quan đến việc giải quyết tài sản của Đô đốc John Bush nổi tiếng, người sáng lập Công ty Bến tàu Bangkok và cựu quản lý cảng."
+      }
+    ],
+    "wiseCounsel": {
+      "tag": "Lời khuyên khôn ngoan",
+      "title": "Lịch sử của Công ty luật lâu đời nhất Thái Lan",
+      "description": "Để kỷ niệm 120 năm thành lập công ty vào năm 2010, Tilleke & Gibbins đã phát hành Wise Counsel, một biên niên sử minh họa dài 236 trang về công ty. Được xuất bản bởi Mark Standen và được viết bởi John Hoskin, Wise Counsel theo dõi sự phát triển của công ty từ khi William Alfred Goone Tilleke đến Vương quốc Xiêm vào năm 1890 qua nhiều thay đổi khác nhau đã tạo nên hoạt động pháp lý như ngày nay. Cuốn sách có một bộ sưu tập ấn tượng gồm các bức ảnh lịch sử, hồ sơ đối tác chính và các cuộc thảo luận về các vụ án lớn, khiến nó trở thành một sự bổ sung tuyệt vời cho giá sách của bất kỳ người đam mê lịch sử nào.",
+      "buttonText": "Đặt trước một bản cứng"
+    }
+  },
+  "contact": {
+    "header": {
+      "height": "475",
+      "backgroundImg": "https://www.receptionhq.com/wp-content/uploads/2021/09/how-to-answer-business-phone-calls-social_share-800x600.jpg",
+      "tag": "HOME // ABOUT // CONTACT",
+      "title": "Liên hệ",
+      "description": "Chúng tôi hoan nghênh các câu hỏi và bình luận của bạn. Thông tin liên hệ đầy đủ cho tất cả các văn phòng của chúng tôi được nêu bên dưới. Bạn cũng có thể thoải mái tìm kiếm chuyên gia của chúng tôi cho một người cụ thể hoặc chỉ cần liên hệ với chúng tôi và chúng tôi sẽ vui lòng kết nối bạn với đúng người."
+    }
   }
 }
-
-

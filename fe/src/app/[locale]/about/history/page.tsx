@@ -1,11 +1,11 @@
 'use client'
 
+import MoreInfo from "@/src/app/components/history/moreInfo";
+import TimeLine from "@/src/app/components/history/timeLine";
+import Overview from "@/src/app/components/overview";
 import { usePathname } from "@/src/navigation";
-import AboutComponents from "../../components/about/aboutComponents";
-import MoreDetail from "../../components/about/moreDetail";
-import Overview from "../../components/overview";
 
-export default function AboutUs(){
+export default function History(){
   const pathname = usePathname()
   let translationCollection;
   if(pathname == '/') {
@@ -16,8 +16,8 @@ export default function AboutUs(){
   return(
     <div>
       <Overview translationCollection={translationCollection}/>
-      <MoreDetail translationCollection={translationCollection}/>
-      <AboutComponents translationCollection={translationCollection}/>
+      <TimeLine translationCollection={translationCollection}/>
+      <MoreInfo translationCollection={translationCollection}/>
     </div>
   )
 }

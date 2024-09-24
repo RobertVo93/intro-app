@@ -4,31 +4,18 @@ import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from './componentNameTag';
 
-
 export default function Experience(){
-  const t = useTranslations('locations.experience')
-  const items = [
-    { text: t('0') },
-    { text: t('1') },
-    { text: t('2') },
-    { text: t('3') },
-    { text: t('4') },
-    { text: t('5') },
-    { text: t('6') },
-    { text: t('7') },
-    { text: t('8') },
-    { text: t('9') },
-  ]
+  const t = useTranslations()
+  const experiences = t.raw("experiences") as string[]
   
-
   const [loadmore, setLoadmore] = useState(false)
-  const [displayItems, setDisplayItems] = useState(items.slice(0, 6))
+  const [displayItems, setDisplayItems] = useState(experiences.slice(0, 6))
 
   useEffect(() => {
     if(loadmore) {
-      setDisplayItems(items.slice(0, items.length))
+      setDisplayItems(experiences.slice(0, experiences.length))
     } else {
-      setDisplayItems(items.slice(0, 6))
+      setDisplayItems(experiences.slice(0, 6))
     }
   }, [loadmore])
 
@@ -48,7 +35,7 @@ export default function Experience(){
               <ListItemIcon className='mt-[8px] pl-[20px]'>
                 <FiberManualRecordIcon className='text-sm text-black'/>
               </ListItemIcon>
-              <ListItemText primary={item.text} />
+              <ListItemText primary={item} />
             </ListItem>
           ))}
         </List>

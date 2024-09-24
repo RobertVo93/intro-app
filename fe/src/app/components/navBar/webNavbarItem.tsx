@@ -5,16 +5,68 @@ import { NavbarPanelTransition } from '../transitions/navbarItemTransition';
 import LocaleSwitcher from '../localeSwitcher/localeSwitcher';
 import { useRouter } from '@/src/navigation';
 
+const industries = [
+  'Automotive',
+  'Aviation',
+  'Consumer Products',
+  'Energy',
+  'Fintech',
+  'Insurance',
+  'Life Sciences',
+  'Technology'
+]
+
+const practices = [
+  'Banking and Finance',
+  'Capital Markets',
+  'Competition and Trade',
+  'Compliance and Investigations',
+  'Corporate/M&A',
+  'Dispute Resolution and Litigation',
+  'Employment',
+  'Intellectual Property',
+  'Real Estate',
+  'Regulatory Affairs',
+  'Tax'
+]
+
+const locations = [
+  'Cambodia', 'Indonesia', 'Laos', 'Myanmar', 'Thailand', 'Vietnam', 'Global Search'
+]
+
+const careers = [
+  'Legal Professionals', 'Operations Professionals', 'Internships', 'All Job Opportunities',
+]
+
+const abouts = [
+  'History', 'Awards & Rankings', 'Pro Bono', 'CSR', 'Museum of Counterfeit Goods', 'Textile Collection'
+]
+
 export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   const [showPanel, setShowPanel] = useState(false);
   const router = useRouter()
 
+  const handleNavigate = (title:string) => {
+    // mock: some page not designed yet
+    if(title === 'services') {
+      router.push('/services')
+    } else if(title === 'locations') {
+      router.push('/')
+    } else if(title === 'about') {
+      router.push('/about')
+    } else if(title === 'contact') {
+      router.push('/contact')
+    } else {
+      console.log('Can not navigate right now')
+    }
+  }
+
   const displayedPanel = () => {
     switch(title) {
-      case('services'): return <ServicePanel />
-      case('locations'): return <LocationPanel />
-      case('careers'): return <CareersPanel />
-      case('about'): return <AboutPanel />
+      case('services'): return <ServicesMenu />
+      case('locations'): return <OthersMenu menuWidth={120} items={locations}/>
+      case('careers'): return <OthersMenu menuWidth={200} items={careers}/>
+      case('about'): return <OthersMenu menuWidth={230} items={abouts}/>
       case('language'): return <LocaleSwitcher />
     }
   }
@@ -27,7 +79,12 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
       onMouseEnter={() => setShowPanel(true)}
       onMouseLeave={() => setShowPanel(false)}
     >
-      <div className='uppercase'>{title}</div>
+      <div 
+        className='uppercase' 
+        onClick={() => handleNavigate(title)}
+      >
+        {title}
+      </div>
       {canExpand ? <KeyboardArrowDownIcon /> : null}
       {showPanel && canExpand && (
         <div
@@ -44,32 +101,7 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   )
 }
 
-const ServicePanel = () => {
-  const industries = [
-    'Automotive',
-    'Aviation',
-    'Consumer Products',
-    'Energy',
-    'Fintech',
-    'Insurance',
-    'Life Sciences',
-    'Technology'
-  ]
-
-  const practices = [
-    'Banking and Finance',
-    'Capital Markets',
-    'Competition and Trade',
-    'Compliance and Investigations',
-    'Corporate/M&A',
-    'Dispute Resolution and Litigation',
-    'Employment',
-    'Intellectual Property',
-    'Real Estate',
-    'Regulatory Affairs',
-    'Tax'
-  ]
-  
+const ServicesMenu = () => {
   return(
     <div className='w-[800px] flex text-white text-[15px] font-normal leading-5 normal-case'>
       <div className='w-1/3 h-full flex flex-col border-r-2 border-solid border-[#1a497b]'>
@@ -98,45 +130,17 @@ const ServicePanel = () => {
   )
 }
 
-const LocationPanel = () => {
-  const locations = [
-    'Cambodia', 'Indonesia', 'Laos', 'Myanmar', 'Thailand', 'Vietnam', 'Global Search'
-  ]
+const OthersMenu = ({items, menuWidth}:{items:string[], menuWidth: number}) => {
   return(
-    <div className='w-[150px] flex flex-col text-white text-[15px] font-normal leading-5 normal-case'>
+    <div 
+      className={`flex flex-col text-white text-[15px] font-normal leading-5`}
+      style={{
+        width: `${menuWidth}px`
+      }}
+    >
       {
-        locations.map(location => (
+        items.map(location => (
           <PanelItem key={location} title={location}/>
-        ))
-      }
-    </div>
-  )
-}
-
-const CareersPanel = () => {
-  const careers = [
-    'Legal Professionals', 'Operations Professionals', 'Internships', 'All Job Opportunities',
-  ]
-  return(
-    <div className='w-[220px] flex flex-col text-white text-[15px] font-normal leading-5 normal-case'>
-      {
-        careers.map(career => (
-          <PanelItem key={career} title={career}/>
-        ))
-      }
-    </div>
-  )
-}
-
-const AboutPanel = () => {
-  const items = [
-    'History', 'Awards & Rankings', 'Pro Bono', 'CSR', 'Museum of Counterfeit Goods', 'Textile Collection'
-  ]
-  return(
-    <div className='w-[250px] flex flex-col text-white text-[15px] font-normal leading-5 normal-case'>
-      {
-        items.map(item => (
-          <PanelItem key={item} title={item}/>
         ))
       }
     </div>
