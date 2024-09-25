@@ -5,21 +5,9 @@ function NavbarPanelTransition({children}: {children: React.ReactNode;}, key: st
   return (
     <motion.div
       initial={{ opacity: 0 }}  
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}     
-      transition={{ duration: 1 }} 
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-function NavbarItemTransition({children}: {children: React.ReactNode;}, key: string) {
-  return (
-    <motion.div
-      initial={{ color: 'white' }} 
-      animate={{ color: "white" }}
+      animate={{ opacity: 1 }}     
       transition={{ duration: 0.5 }} 
+      className="w-fit h-fit absolute top-[44px]"
     >
       {children}
     </motion.div>
@@ -29,10 +17,10 @@ function NavbarItemTransition({children}: {children: React.ReactNode;}, key: str
 function NavbarIconTransition({children}: {children: React.ReactNode;}, key: string) {
   return (
     <motion.div
-      initial={{ opacity: 0, color: 'red' }}  
-      animate={{ opacity: 1 }} 
-      exit={{ opacity: 0 }}     
+      initial={{ opacity: 0, width: 0 }}
+      animate={{ opacity: 1, width: '20px'}}
       transition={{ duration: 0.5 }} 
+      className="flex items-center text-red-700"
     >
       {children}
     </motion.div>
@@ -40,7 +28,6 @@ function NavbarIconTransition({children}: {children: React.ReactNode;}, key: str
 }
 
 export {
-  NavbarItemTransition, 
   NavbarIconTransition,
   NavbarPanelTransition,
 }

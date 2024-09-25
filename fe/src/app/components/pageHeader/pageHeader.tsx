@@ -21,8 +21,6 @@ export default function PageHeader(){
   }
   const t = useTranslations(translationCollection)
 
-
-
   const [headerComponent, setHeaderComponent] = useState(<LocationHeader />)
 
   useEffect(() => {

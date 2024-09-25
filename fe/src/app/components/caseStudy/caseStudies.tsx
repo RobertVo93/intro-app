@@ -1,3 +1,5 @@
+'use client'
+
 import CaseStudy from '@images/case-study.png'
 import Image from 'next/image'
 import CaseStudyItem from './item';
@@ -6,7 +8,6 @@ import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from '../componentNameTag';
 import CaseStudyTransition from '../transitions/caseStudyTransition';
-import { usePathname } from '@/src/navigation';
 
 export default function CaseStudies({translationCollection}: {translationCollection: string}) {
   const t = useTranslations(translationCollection)
@@ -49,7 +50,7 @@ export default function CaseStudies({translationCollection}: {translationCollect
           <div className='w-[55%] h-[400px]'>
             {
               paginatedItems.map((item: any, index: number) => (
-                <CaseStudyTransition key={index}>
+                <CaseStudyTransition key={Math.random()}>
                   <CaseStudyItem 
                     tag={item.tag} 
                     title={item.title} 

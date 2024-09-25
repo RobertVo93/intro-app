@@ -24,7 +24,7 @@ export default function LocaleSwitcherItem({
 
   return(
     <div 
-      className={`h-[40px] py-[10px] cursor-pointer hover:text-red-500`}
+      className={`h-[40px] py-[10px] cursor-pointer hover:text-red-600 transition duration-500`}
       onClick={() => onClickChange(nextLocale)}
     >
       {lang}

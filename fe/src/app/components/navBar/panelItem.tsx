@@ -1,10 +1,8 @@
 'use client'
 
 import { useState } from "react"
-import RemoveIcon from '@mui/icons-material/Remove';
-import {NavbarItemTransition, NavbarIconTransition} from "../transitions/navbarItemTransition";
+import {NavbarIconTransition} from "../transitions/navbarItemTransition";
 import { useRouter } from "@/src/navigation";
-import { usePathname } from "next/navigation";
 
 export default function PanelItem({
   title
@@ -21,21 +19,21 @@ export default function PanelItem({
   }
 
   return(
-    <NavbarItemTransition>
-      <div 
-        className='h-[40px] py-[10px] cursor-pointer flex'
-        onMouseEnter={() => setIsHover(true)}
-        onMouseLeave={() => setIsHover(false)}
-        onClick={onNavigate}
-      >
-        {isHover ? 
-          <NavbarIconTransition>
-            <RemoveIcon />
-          </NavbarIconTransition> : 
-          null
-        } {title} 
-      </div>
-    </NavbarItemTransition>
-    
+    <div 
+      className={`h-[40px] py-[10px] cursor-pointer flex 'text-white' transition-colors duration-500 hover:font-semibold hover:text-red-500`}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+      onClick={onNavigate}
+    >
+      {isHover ? 
+        <NavbarIconTransition>
+          <div className="w-full h-full flex items-center mr-[2px]">
+            <div className="w-full border-t-2 border-solid border-red-600"></div>
+          </div>
+        </NavbarIconTransition> : 
+        null
+      } 
+      {title} 
+    </div>
   )
 }

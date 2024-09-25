@@ -5,6 +5,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useState } from 'react';
 import CircleIcon from '@mui/icons-material/Circle';
 import { useTranslations } from 'next-intl';
+import {motion} from 'framer-motion'
 
 export default function TimeLine({translationCollection}:{translationCollection:string}){
   const t = useTranslations(translationCollection)
@@ -32,17 +33,14 @@ export default function TimeLine({translationCollection}:{translationCollection:
             timeStamps.map((item, index) => (
               <div 
                 key={index} 
-                className='w-[50px] cursor-pointer font-normal leading-[24px]'
+                className={`w-[50px] cursor-pointer font-normal leading-[24px] hover:underline underline-offset-1 text-[#505d6a]`}
                 onClick={() => onPageChangeClickHandler(index +1)}
-                style={{
-                  color: selectedTimeStamp == item ? 'white' : '#505d6a'
-                }}
               >
                 <div className='w-full h-[20px] flex justify-center items-center relative'>
-                  <CircleIcon  className='w-[13px] z-50'/>
+                  <CircleIcon  className={`w-[13px] z-50 ${selectedTimeStamp == item ? 'text-red-600 transition duration-500' : 'text-white' }`}/>
                   <div className='w-full h-full absolute top-[9px] left-0 border-t border-white'></div>
                 </div>
-                <div className='mt-[15px] text-[13px] flex justify-center'>
+                <div className={`mt-[15px] text-[13px] flex justify-center ${selectedTimeStamp == item ? 'text-white font-semibold transition duration-500' : 'text-[#505d6a]'}`}>
                   {item.time}
                 </div>
               </div>
@@ -56,7 +54,13 @@ export default function TimeLine({translationCollection}:{translationCollection:
           <div className='w-full h-full'>
             {
               paginatedItems.map((item, index) => (
-                <div key={index} className='w-full h-full flex'>
+                <motion.div 
+                  key={Math.random()} 
+                  className='w-full h-full flex transition'
+                  initial={{ opacity: 0, x: 100 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                >
                   <img 
                     alt=''
                     src={item.img}
@@ -73,7 +77,7 @@ export default function TimeLine({translationCollection}:{translationCollection:
                       {item.content}
                     </div>
                   </div>
-                </div>
+                </motion.div>
               ))
             }
           </div>

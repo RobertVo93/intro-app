@@ -64,9 +64,9 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   const displayedPanel = () => {
     switch(title) {
       case('services'): return <ServicesMenu />
-      case('locations'): return <OthersMenu menuWidth={120} items={locations}/>
-      case('careers'): return <OthersMenu menuWidth={200} items={careers}/>
-      case('about'): return <OthersMenu menuWidth={230} items={abouts}/>
+      case('locations'): return <OthersMenu menuWidth={130} items={locations}/>
+      case('careers'): return <OthersMenu menuWidth={210} items={careers}/>
+      case('about'): return <OthersMenu menuWidth={235} items={abouts}/>
       case('language'): return <LocaleSwitcher />
     }
   }
@@ -87,15 +87,12 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
       </div>
       {canExpand ? <KeyboardArrowDownIcon /> : null}
       {showPanel && canExpand && (
-        <div
-          className='w-fit h-fit p-[40px] absolute top-[44px] bg-[#003166] shadow-lg cursor-default'
-        >
-          {
-            <NavbarPanelTransition>
-              {displayedPanel()}
-            </NavbarPanelTransition>
-          }
-        </div>
+        <NavbarPanelTransition>
+          <div className='p-[40px] bg-[#003166] shadow-lg cursor-default'>
+            {displayedPanel()}
+          </div>
+        </NavbarPanelTransition>
+        
       )}
     </div>
   )

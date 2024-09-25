@@ -1,6 +1,7 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import { useEffect, useState } from 'react';
+import AutomotiveHeaderTransition from '../transitions/automotiveHeaderTransition';
 
 const agencies = [
   {
@@ -88,7 +89,7 @@ export default function AutomotiveHeader () {
   }, [currentLocation])
 
   return(
-    <div className="w-full flex flex-col justify-start">
+    <div className="w-full h-full flex flex-col justify-start">
       <div className='text-[28px] not-italic font-bold leading-[35px] mt-[20px]'>
         Key Contacts
       </div>
@@ -97,7 +98,7 @@ export default function AutomotiveHeader () {
         {
           agencies.map((ag, idx) => (
             <div 
-              className={`w-[115px] h-[40px] border-[1.5px] border-solid border-white mr-[20px] flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-[#002042] bg-white' : null}`}
+              className={`w-[115px] h-[40px] border-[1.5px] border-solid border-white flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-[#002042] bg-white' : null}`}
               style={{
                 
               }}
@@ -109,26 +110,28 @@ export default function AutomotiveHeader () {
           ))
         }
       </div>
-      
-      {
-        currentEmployee ? 
-          <div className='w-full flex mt-[20px]'>
-            {currentEmployee.map((emp, idx) => (
-              <div className="flex flex-col mr-[80px]" key={idx}>
-                <div className="flex text-[18px] font-semibold not-italic leading-[24px] mb-2">{emp.name}</div>
-                  <div className="flex items-center">
-                    <PhoneIcon className="w-5 h-5"/>
-                    <div className="ml-[15px]">{emp.phone}</div>
-                  </div>
-                  <div className="flex items-center">
-                    <EmailIcon className="w-5 h-5"/>
+
+      <AutomotiveHeaderTransition key={Math.random()}>
+        {
+          currentEmployee ? 
+            <div className='w-full h-full flex mt-[30px] justify-start'>
+              {currentEmployee.map((emp, idx) => (
+                <div className="flex flex-col mr-[80px]" key={idx}>
+                  <div className="flex text-[18px] font-semibold not-italic leading-[24px] mb-2">{emp.name}</div>
+                    <div className="flex items-center">
+                      <PhoneIcon className="w-5 h-5"/>
+                      <div className="ml-[15px]">{emp.phone}</div>
+                    </div>
+                    <div className="flex items-center">
+                      <EmailIcon className="w-5 h-5"/>
                     <div className="ml-[15px]">{emp.email}</div>
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        : null
-      }
+              ))}
+            </div>
+          : null
+        }
+      </AutomotiveHeaderTransition>
     </div>
   )
 }
