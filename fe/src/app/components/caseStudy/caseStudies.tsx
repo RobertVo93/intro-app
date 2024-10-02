@@ -8,10 +8,14 @@ import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from '../componentNameTag';
 import CaseStudyTransition from '../transitions/caseStudyTransition';
-
-export default function CaseStudies({translationCollection}: {translationCollection: string}) {
+interface ICaseStudy {
+  tag: string;
+  title: string;
+  description: string;
+}
+export default function CaseStudies({ translationCollection }: { translationCollection: string }) {
   const t = useTranslations(translationCollection)
-  const caseStudies = t.raw("caseStudies") as string[]
+  const caseStudies = t.raw("caseStudies") as ICaseStudy[]
 
   const [page, setPage] = useState(1);
   const itemsPerPage = 1;
@@ -25,7 +29,7 @@ export default function CaseStudies({translationCollection}: {translationCollect
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if(page == caseStudies.length) {
+      if (page == caseStudies.length) {
         setPage(1)
       } else {
         setPage((prevIndex) => (prevIndex + 1));
@@ -34,13 +38,13 @@ export default function CaseStudies({translationCollection}: {translationCollect
     return () => clearInterval(interval);
   }, [page]);
 
-  return(
-    <div 
+  return (
+    <div
       className="w-full h-[560px] relative mb-5"
     >
       <div className='w-full h-[560px] absolute top-0 left-0 z-0 flex'>
         <div className='bg-black w-[200px]'></div>
-        <Image src={CaseStudy} alt='' className='w-full'/>
+        <Image src={CaseStudy} alt='' className='w-full' />
         <div className='bg-black w-[200px]'></div>
       </div>
 
@@ -49,12 +53,12 @@ export default function CaseStudies({translationCollection}: {translationCollect
           <ComponentNameTag name='CASE STUDIES' />
           <div className='w-[55%] h-[400px]'>
             {
-              paginatedItems.map((item: any, index: number) => (
-                <CaseStudyTransition key={Math.random()}>
-                  <CaseStudyItem 
-                    tag={item.tag} 
-                    title={item.title} 
-                    description={item.description} 
+              paginatedItems.map((item, index: number) => (
+                <CaseStudyTransition key={index}>
+                  <CaseStudyItem
+                    tag={item.tag}
+                    title={item.title}
+                    description={item.description}
                   />
                 </CaseStudyTransition>
               ))
@@ -71,17 +75,17 @@ export default function CaseStudies({translationCollection}: {translationCollect
                 mt: "10px",
                 mr: "4px",
                 "& .MuiPaginationItem-root": {
-                  color: "grey",      
-                  backgroundColor: "#f0f0f0", 
+                  color: "grey",
+                  backgroundColor: "#f0f0f0",
                   "&:hover": {
                     bgcolor: "#f0ffff"
                   }
                 },
                 "& .Mui-selected": {
-                  backgroundColor: "orange", 
-                  color: "white",            
+                  backgroundColor: "orange",
+                  color: "white",
                 },
-              }} 
+              }}
             />
           </div>
         </div>

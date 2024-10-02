@@ -1,5 +1,4 @@
 import { Box } from "@mui/material";
-import Image from "next/image";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { ServiceType } from "./type";
 

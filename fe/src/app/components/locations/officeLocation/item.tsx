@@ -1,6 +1,5 @@
 'use client'
 
-import RemoveIcon from '@mui/icons-material/Remove';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
@@ -33,8 +32,8 @@ export default function OfficeLocationItem({
     lng: 106.61289903842204
   };
   
-  let coordinate = location==='Ha Noi' ?  HNCoordinate :  HCMCoordinate
-  let address = location==='Ha Noi' ?  "Ba Dinh, Ha Noi" :  "Tan Phu, Ho Chi Minh"
+  const coordinate = location==='Ha Noi' ?  HNCoordinate :  HCMCoordinate
+  const address = location==='Ha Noi' ?  "Ba Dinh, Ha Noi" :  "Tan Phu, Ho Chi Minh"
 
   return(
     <div className='w-1/2 relative'>

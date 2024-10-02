@@ -1,6 +1,7 @@
-import ContactItem from "./contactItem"
+import { ContactItem } from './type';
+import ContactItemPage from './contactItem';
 
-const contactItems:ContactItem[] = [
+const contactItems: ContactItem[] = [
   {
     img: 'https://i0.wp.com/travelgangtok.com/blog/wp-content/uploads/2023/12/Bangkok-Thailand.jpg?resize=741%2C437&ssl=1',
     location: 'Bangkok Office',
@@ -59,13 +60,13 @@ const contactItems:ContactItem[] = [
   },
 ]
 
-export default function ContactContainer(){
-  return(
+export default function ContactContainer() {
+  return (
     <div className="w-full h-full flex justify-center ">
       <div className="w-4/5 h-full pt-[80px] grid grid-cols-4 gap-[20px]">
         {
           contactItems.map((item, index) => (
-            <ContactItem
+            <ContactItemPage
               key={index}
               img={item.img}
               location={item.location}
@@ -78,6 +79,6 @@ export default function ContactContainer(){
         }
       </div>
     </div>
-    
+
   )
 }

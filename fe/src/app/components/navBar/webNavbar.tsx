@@ -5,7 +5,7 @@ import Image from 'next/image'
 import SearchIcon from '@mui/icons-material/Search';
 import { useEffect, useState } from 'react';
 import NavbarItem from './webNavbarItem';
-import { useRouter } from "@/src/navigation";
+import { WebNavBarItemType } from './type';
 
 const webNavbarItems: WebNavBarItemType[] = [
   {title: "professionals"},
