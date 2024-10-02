@@ -65,7 +65,8 @@ export default function ContactContainer(){
       <div className="w-4/5 h-full pt-[80px] grid grid-cols-4 gap-[20px]">
         {
           contactItems.map((item, index) => (
-            <ContactItem 
+            <ContactItem
+              key={index}
               img={item.img}
               location={item.location}
               office={item.office}

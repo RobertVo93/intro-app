@@ -39,6 +39,7 @@ export default function WebNavbar(){
           {webNavbarItems.map((item, index) => (
             <div
               className='flex items-center justify-center'
+              key={index}
             >
               <NavbarItem key={index} title={item.title} canExpand={item.canExpand}/>
             </div>

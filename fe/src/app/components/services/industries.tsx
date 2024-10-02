@@ -21,7 +21,7 @@ export default function Industries(){
       <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4">
         {
           fields.map((field, index) => (
-            <div className="flex items-center justify-center mt-[20px]">
+            <div key={index} className="flex items-center justify-center mt-[20px]">
               <IndustriesItem key={index} field={field.field} image={field.image}/>
             </div>
           ))
