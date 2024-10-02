@@ -53,8 +53,8 @@ export default function CaseStudies({ translationCollection }: { translationColl
           <ComponentNameTag name='CASE STUDIES' />
           <div className='w-[55%] h-[400px]'>
             {
-              paginatedItems.map((item, index: number) => (
-                <CaseStudyTransition key={index}>
+              paginatedItems.map((item) => (
+                <CaseStudyTransition key={Math.random()}>
                   <CaseStudyItem
                     tag={item.tag}
                     title={item.title}

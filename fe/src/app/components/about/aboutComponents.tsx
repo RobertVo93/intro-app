@@ -22,7 +22,7 @@ export default function AboutComponents({ translationCollection }: { translation
               {item.description}
             </div>
             <div className="flex items-center px-[10px] pt-[10px] text-[16px] leading-[16px] font-bold text-[#002042] cursor-pointer">
-              Learn more <ArrowRightAltIcon className='text-red-700' />
+              Learn more <ArrowRightAltIcon sx={{color: "#b91c1c"}} />
             </div>
           </div>
         ))

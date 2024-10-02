@@ -21,10 +21,21 @@ export default function TimeLine({ translationCollection }: { translationCollect
   const [selectedTimeStamp, setSelectedTimeStamp] = useState(timeStamps[0])
   const [page, setPage] = useState(1);
   const itemsPerPage = 1;
+
   const onPageChangeClickHandler = (value: number) => {
     setPage(value);
     setSelectedTimeStamp(timeStamps[value - 1])
   };
+
+  const onNextClickHandler = () => {
+    if(page < timeStamps.length) {
+      setPage(prev => prev + 1)
+      setSelectedTimeStamp(timeStamps[page])
+    } else {
+      setPage(1)
+      setSelectedTimeStamp(timeStamps[0])
+    }
+  }
   const startIndex = (page - 1) * itemsPerPage;;
   const endIndex = startIndex + itemsPerPage;
   const paginatedItems = timeStamps.slice(startIndex, endIndex);
@@ -33,7 +44,7 @@ export default function TimeLine({ translationCollection }: { translationCollect
     <div className="w-full h-[800px] relative">
       <div className="w-full h-[520px] bg-[#002042]">
         <div className='text-[14px] px-[10%] leading-5 uppercase not-italic font-semibold flex items-center text-white pt-[80px]'>
-          <RemoveIcon className='text-red-700 h-[30px] items-center' /> TIMELINE
+          <RemoveIcon sx={{ height: "30px", color: "#b91c1c"}} /> TIMELINE
         </div>
         <div className='w-full h-fit px-[10%] flex mt-[30px] relative'>
           {
@@ -44,7 +55,15 @@ export default function TimeLine({ translationCollection }: { translationCollect
                 onClick={() => onPageChangeClickHandler(index + 1)}
               >
                 <div className='w-full h-[20px] flex justify-center items-center relative'>
-                  <CircleIcon className={`w-[13px] z-50 ${selectedTimeStamp == item ? 'text-red-600 transition duration-500' : 'text-white'}`} />
+                  <CircleIcon 
+                    sx={{
+                      width: "13px", 
+                      zIndex: 50,
+                      color: selectedTimeStamp == item ? "#dc2626" : "white",
+                      transition: "all",
+                      transitionDuration: 500
+                    }}
+                  />
                   <div className='w-full h-full absolute top-[9px] left-0 border-t border-white'></div>
                 </div>
                 <div className={`mt-[15px] text-[13px] flex justify-center ${selectedTimeStamp == item ? 'text-white font-semibold transition duration-500' : 'text-[#505d6a]'}`}>
@@ -58,12 +77,12 @@ export default function TimeLine({ translationCollection }: { translationCollect
 
       <div className="w-full h-[500px] absolute bottom-[50px] px-[4%] flex justify-center z-50">
         <div className='w-full h-full flex flex-col bg-slate-100 relative' >
-          <div className='w-full h-full'>
+          <div className='w-full h-full overflow-hidden relative'>
             {
-              paginatedItems.map((item, index) => (
+              paginatedItems.map((item) => (
                 <motion.div
-                  key={index}
-                  className='w-full h-full flex transition'
+                  key={Math.random()}
+                  className='w-full h-full flex absolute right-0'
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
@@ -88,7 +107,10 @@ export default function TimeLine({ translationCollection }: { translationCollect
               ))
             }
           </div>
-          <div className="absolute right-[40px] bottom-[20px] flex items-center text-[16px] leading-[16px] font-bold text-red-700 cursor-pointer">
+          <div 
+            className="absolute right-[40px] bottom-[20px] flex items-center text-[16px] leading-[16px] font-bold text-red-700 cursor-pointer"
+            onClick={onNextClickHandler}
+          >
             Next <ArrowRightAltIcon />
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Creed({translationCollection}:{translationCollection:str
         {
           lawFirmItems.map((item, index) => (
             <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
-              <FiberManualRecordIcon className='w-[10px] h-[10px] text-black'/> {item}
+              <FiberManualRecordIcon sx={{width: "10px", height: "10px", color: "black"}} /> {item}
             </div>
           ))
         }
@@ -27,7 +27,7 @@ export default function Creed({translationCollection}:{translationCollection:str
         {
           facilitiesItems.map((item, index) => (
             <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
-              <FiberManualRecordIcon className='w-[10px] h-[10px] text-black'/> {item}
+              <FiberManualRecordIcon sx={{width: "10px", height: "10px", color: "black"}} /> {item}
             </div>
           ))
         }

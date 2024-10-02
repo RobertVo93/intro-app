@@ -4,6 +4,7 @@ import PanelItem from './panelItem';
 import { NavbarPanelTransition } from '../transitions/navbarItemTransition';
 import LocaleSwitcher from '../localeSwitcher/localeSwitcher';
 import { useRouter } from '@/src/navigation';
+import { WebNavBarItemType } from './type';
 
 const industries = [
   'Automotive',
@@ -92,7 +93,6 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
             {displayedPanel()}
           </div>
         </NavbarPanelTransition>
-        
       )}
     </div>
   )

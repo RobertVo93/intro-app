@@ -45,7 +45,7 @@ export default function WebNavbar(){
             </div>
           ))}
           <div className='h-[100px] flex items-center'>
-            <SearchIcon className='w-[25px] h-[25px] text-white cursor-pointer'/>
+            <SearchIcon sx={{width: "25px", height: "25px", color: "white", cursor: "pointer"}} />
           </div>
         </div>
       </div>

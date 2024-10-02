@@ -28,9 +28,9 @@ export default function PageFooter(){
           © 2024 Tilleke & Gibbins International Ltd. All rights reserved.
         </div>
         <div className='h-[50px] flex items-end'>
-          <LinkedInIcon className='w-[40px] h-[40px] text-[#212b36] cursor-pointer'/>
-          <YouTubeIcon className='w-[40px] h-[40px] text-[#212b36] cursor-pointer'/>
-          <FacebookIcon className='w-[40px] h-[40px] text-[#212b36] cursor-pointer'/>
+          <LinkedInIcon sx={{width: "40px", height: "40px", color: "#212b36", cursor: "pointer"}}/>
+          <YouTubeIcon sx={{width: "40px", height: "40px", color: "#212b36", cursor: "pointer"}}/>
+          <FacebookIcon sx={{width: "40px", height: "40px", color: "#212b36", cursor: "pointer"}}/>
         </div>
         <div className='flex text-[#002042] text-[14px] not-italic font-normal leading-[24px]'>
           <div className='cursor-pointer'> Privacy Policy </div> &nbsp;|&nbsp; 

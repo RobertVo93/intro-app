@@ -14,13 +14,13 @@ export default function ContactItemPage(item: ContactItem) {
         {item.office}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <PhoneIcon className='mr-[10px] w-4 h-4' /> {item.phone}
+        <PhoneIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.phone}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <EmailIcon className='mr-[10px] w-4 h-4' /> {item.email}
+        <EmailIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.email}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <PlaceIcon className='mr-[10px] w-4 h-4' /> {item.address}
+        <PlaceIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.address}
       </div>
     </div>
   )

@@ -14,7 +14,7 @@ export default function CaseStudyItem({ tag, title, description }: CaseStudy) {
         {description}
       </div>
       <div className='flex items-center mt-[20px] text-[19px] font-bold cursor-pointer'>
-        Read More <ArrowRightAltIcon className='text-red-700' />
+        Read More <ArrowRightAltIcon sx={{color: "#b91c1c"}} />
       </div>
     </div>
   )
