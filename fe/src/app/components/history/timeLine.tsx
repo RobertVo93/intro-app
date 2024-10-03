@@ -1,11 +1,11 @@
 'use client'
 
-import RemoveIcon from '@mui/icons-material/Remove';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useState } from 'react';
 import CircleIcon from '@mui/icons-material/Circle';
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion'
+import ComponentNameTag from '../componentNameTag';
 
 interface ITimeStamp {
   time: string;
@@ -42,9 +42,9 @@ export default function TimeLine({ translationCollection }: { translationCollect
 
   return (
     <div className="w-full h-[800px] relative">
-      <div className="w-full h-[520px] bg-[#002042]">
+      <div className="w-full h-[520px] bg-themeColor">
         <div className='text-[14px] px-[10%] leading-5 uppercase not-italic font-semibold flex items-center text-white pt-[80px]'>
-          <RemoveIcon sx={{ height: "30px", color: "#b91c1c"}} /> TIMELINE
+          <ComponentNameTag name='TIMELINE'/>
         </div>
         <div className='w-full h-fit px-[10%] flex mt-[30px] relative'>
           {
@@ -93,13 +93,13 @@ export default function TimeLine({ translationCollection }: { translationCollect
                     className='w-[40%] h-full'
                   />
                   <div className='flex flex-col px-[50px] pt-[50px]'>
-                    <div className='mt-[20px] text-[#002042] text-[16px] not-italic font-bold leading-[21.28px]'>
+                    <div className='mt-[20px] text-primary text-[16px] not-italic font-bold leading-[21.28px]'>
                       {item.time}
                     </div>
-                    <div className='my-[20px] text-[#002042] text-[36px] font-bold leading-[46px]'>
+                    <div className='my-[20px] text-primary text-[36px] font-bold leading-[46px]'>
                       {item.title}
                     </div>
-                    <div className='mb-[20px] text-[#222222] text-[16px] font-normal leading-[24px]'>
+                    <div className='mb-[20px] text-secondary text-[16px] font-normal leading-[24px]'>
                       {item.content}
                     </div>
                   </div>

@@ -6,13 +6,13 @@ export default function MissionAndVision({translationCollection}:{translationCol
   const t = useTranslations(translationCollection)
 
   return(
-    <div className="w-full h-full flex text-[#002042]">
+    <div className="w-full h-full flex text-primary">
       <div className="w-1/2 h-full flex flex-col">
         <StarRateIcon sx={{width: "56px", height: "56px"}} />
         <div className='text-[20px] font-bold leading-[26.6px] mt-[30px]'>
           {t('vision.title')}
         </div>
-        <div className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
+        <div className='text-[16px] font-normal leading-[24px] text-secondary mt-[10px]'>
           {t('vision.description')}
         </div>
       </div>
@@ -21,7 +21,7 @@ export default function MissionAndVision({translationCollection}:{translationCol
         <div className='text-[20px] font-bold leading-[26.6px] mt-[30px]'>
           {t('mission.title')}
         </div>
-        <div className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
+        <div className='text-[16px] font-normal leading-[24px] text-secondary mt-[10px]'>
           {t('mission.description')}
         </div>
       </div>

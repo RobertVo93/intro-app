@@ -10,8 +10,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: "#ffffff",
-        themeColor: "#0000e6"
+        bgColor: "#ffffff",
+        themeColor: "#0000e6",
+        primary: '#002042',
+        secondary: '#222222',
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

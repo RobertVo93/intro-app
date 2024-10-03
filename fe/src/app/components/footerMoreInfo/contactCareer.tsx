@@ -14,10 +14,10 @@ export default function ContactCareer({
       <div className="text-[20px] not-italic font-semibold leading-5">
         {title}
       </div>
-      <div className="mt-[20px] text-[16px] leading-6 text-[#222222]">
+      <div className="mt-[20px] text-[16px] leading-6 text-secondary">
         {description}
       </div>
-      <div className='w-full flex items-center mt-[20px] text-[16px] leading-[16px] font-bold text-[#ed2724] cursor-pointer'>
+      <div className='w-full flex items-center mt-[20px] text-[16px] leading-[16px] font-bold text-red-700 cursor-pointer'>
         {buttonText} <ArrowRightAltIcon/>
       </div>
     </div>

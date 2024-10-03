@@ -32,7 +32,7 @@ export default function WebNavbar(){
   }, []);
 
   return(
-    <div className={`w-full ${isScrolled ? 'h-[100px] bg-[#002042]' : 'h-[150px]'} px-[30px] fixed top-0 left-0 flex items-center z-[999]`}>
+    <div className={`w-full ${isScrolled ? 'h-[100px] bg-themeColor' : 'h-[150px]'} px-[30px] fixed top-0 left-0 flex items-center z-[999]`}>
       <div className='w-full h-[100px] flex items-center'>
         <Image src={PageLogo} alt='' className='w-[99.71px] h-[45.2px] '/>
         <div className='w-full flex justify-evenly pl-[200px]'>

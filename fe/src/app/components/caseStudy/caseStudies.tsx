@@ -8,6 +8,7 @@ import { Pagination } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from '../componentNameTag';
 import CaseStudyTransition from '../transitions/caseStudyTransition';
+import { themeColor } from '../../theme';
 interface ICaseStudy {
   tag: string;
   title: string;
@@ -74,16 +75,12 @@ export default function CaseStudies({ translationCollection }: { translationColl
               sx={{
                 mt: "10px",
                 mr: "4px",
+                color: 'white',
                 "& .MuiPaginationItem-root": {
-                  color: "grey",
-                  backgroundColor: "#f0f0f0",
-                  "&:hover": {
-                    bgcolor: "#f0ffff"
-                  }
+                  borderRadius: '10px',
                 },
                 "& .Mui-selected": {
-                  backgroundColor: "orange",
-                  color: "white",
+                  backgroundColor: themeColor,
                 },
               }}
             />

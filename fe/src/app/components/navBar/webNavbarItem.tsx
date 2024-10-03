@@ -89,7 +89,7 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
       {canExpand ? <KeyboardArrowDownIcon /> : null}
       {showPanel && canExpand && (
         <NavbarPanelTransition>
-          <div className='p-[40px] bg-[#003166] shadow-lg cursor-default'>
+          <div className='p-[40px] bg-[#22229b] shadow-lg cursor-default'>
             {displayedPanel()}
           </div>
         </NavbarPanelTransition>

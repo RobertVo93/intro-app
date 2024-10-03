@@ -45,7 +45,7 @@ export default function MoreDetail({translationCollection}:{translationCollectio
 
   return(
     <div className="w-full h-full flex flex-col">
-      <div className="w-full h-[200px] px-[10px] pt-[50px] pb-[40px] flex bg-[#77777746] text-[#002042] ">
+      <div className="w-full h-[200px] px-[10px] pt-[50px] pb-[40px] flex bg-[#77777746] text-primary ">
         {
           items.map((item, index) => (
             <div key={index} className="w-1/4 flex flex-col items-center justify-center">
@@ -58,7 +58,7 @@ export default function MoreDetail({translationCollection}:{translationCollectio
 
       <div className="w-full h-full bg-black px-[10%] relative">
         <img src={backgroundImg} alt="" className="w-full h-[450px]"/>
-        <div className="w-[80%] h-[56px] absolute bottom-[-28px] bg-[#002042] flex justify-center">
+        <div className="w-[80%] h-[56px] absolute bottom-[-28px] bg-themeColor flex justify-center">
           {
             infoItems.map((item, index) => (
               <div 

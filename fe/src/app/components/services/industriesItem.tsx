@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { ServiceType } from "./type";
+import { red } from "../../theme";
 
 
 export default function IndustriesItem({field, image}: ServiceType){
@@ -18,7 +19,7 @@ export default function IndustriesItem({field, image}: ServiceType){
         transitionDuration: 500,
         '&:hover': {
           '& #user-name': {
-            color: 'red',
+            color: red[500],
           },
         }
       }}
@@ -30,8 +31,8 @@ export default function IndustriesItem({field, image}: ServiceType){
       >
         {field}
       </div>
-      <div className="flex items-center px-[10px] pt-[10px] text-[16px] leading-[16px] font-bold text-[#002042] cursor-pointer">
-        Learn more <ArrowRightAltIcon sx={{ color: "#b91c1c"}} /> 
+      <div className="flex items-center px-[10px] pt-[10px] text-[16px] leading-[16px] font-bold text-primary cursor-pointer">
+        Learn more <ArrowRightAltIcon sx={{ color: red[700]}} /> 
       </div>
     </Box>
   )

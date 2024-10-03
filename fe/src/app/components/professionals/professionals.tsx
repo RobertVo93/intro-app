@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Button } from '@mui/material';
 import ComponentNameTag from '../componentNameTag';
 import { ProfessionalsType } from './type';
+import { red } from '../../theme';
 
 
 const professionals: ProfessionalsType[] = [
@@ -45,13 +46,10 @@ export default function Professionals(){
       <Button
           onClick={onToggleLoadmore}
           sx={{
-            color: "#002042",
-            border: "1px solid #002042",
-            fontWeight: 600,
             "&:hover": {
               color: "white",
-              border: "1px solid red",
-              bgcolor: "red"
+              border: `1px solid ${red[500]}`,
+              bgcolor: red[500]
             }
           }}
         >

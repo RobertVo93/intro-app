@@ -1,5 +1,6 @@
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { useTranslations } from 'next-intl';
+import { red } from '../../theme';
 interface IAboutItem {
   img: string;
   title: string;
@@ -21,8 +22,8 @@ export default function AboutComponents({ translationCollection }: { translation
             <div className="px-[20px] mt-[20px] text-[16px] font-normal not-italic leading-[24px]">
               {item.description}
             </div>
-            <div className="flex items-center px-[10px] pt-[10px] text-[16px] leading-[16px] font-bold text-[#002042] cursor-pointer">
-              Learn more <ArrowRightAltIcon sx={{color: "#b91c1c"}} />
+            <div className="flex items-center px-[10px] pt-[10px] text-[16px] leading-[16px] font-bold text-primary cursor-pointer">
+              Learn more <ArrowRightAltIcon sx={{color: red[700]}} />
             </div>
           </div>
         ))

@@ -98,7 +98,7 @@ export default function AutomotiveHeader () {
         {
           agencies.map((ag, idx) => (
             <div 
-              className={`w-[115px] h-[40px] border-[1.5px] border-solid border-white flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-[#002042] bg-white' : null}`}
+              className={`w-[115px] h-[40px] border-[1.5px] border-solid border-white flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-primary bg-white' : null}`}
               style={{
                 
               }}

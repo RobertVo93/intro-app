@@ -10,12 +10,12 @@ const fields: ServiceType[] = [
   {field: "Fintech", image: 'https://files.dientuungdung.vn/sites/default/files/phamanh/2024/t5/cong_nghe_fintech_tai_viet_nam.jpg'},
   {field: "Insurance", image: 'https://cdn.prod.website-files.com/65ce038ac58a7f988fb59ccd/660dde5fd75afffac6083973_Insurance%20Basics%20Everything%20you%20need%20to%20know-min.webp'},
   {field: "Life Sciences", image: 'https://res-4.cloudinary.com/fieldfisher/image/upload/f_jpg,q_auto/v1/sectors/life%20sciences/lifesciences_microscope-handholdingslide_481463882_medium_hphklj'},
-  {field: "Technology", image: 'https://www.netscribes.com/wp-content/uploads/2019/06/Technology-Watch.jpg'},     
+  {field: "Technology", image: 'https://bernardmarr.com/wp-content/uploads/2022/04/The-10-Biggest-Technology-Trends-That-Will-Transform-The-Next-Decade.jpg'},     
 ]
 
 export default function Industries(){
   return(
-    <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-[#002042] font-semibold">
+    <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-primary font-semibold">
       <ComponentNameTag name='Industries'/>
       <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4">
         {
