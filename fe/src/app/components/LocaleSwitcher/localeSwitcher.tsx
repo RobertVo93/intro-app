@@ -1,6 +1,8 @@
 'use client'
 
-import LocaleSwitcherItem from "./localeSwitcherItem";
+import LocaleSwitcherItem from "./localeSwitcherItem"
+
+// import LocaleSwitcherItem from "./localeSwitcherItem";
 
 export default function LocaleSwitcher(){
   const languages = [

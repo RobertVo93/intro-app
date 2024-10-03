@@ -1,12 +1,12 @@
 "use client";
 import { motion } from "framer-motion"
 
-function NavbarPanelTransition({children}: {children: React.ReactNode;}, key: string) {
+function NavbarPanelTransition({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
-      initial={{ opacity: 0 }}  
-      animate={{ opacity: 1 }}     
-      transition={{ duration: 0.5 }} 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
       className="w-fit h-fit absolute top-[44px]"
     >
       {children}
@@ -14,12 +14,12 @@ function NavbarPanelTransition({children}: {children: React.ReactNode;}, key: st
   );
 }
 
-function NavbarIconTransition({children}: {children: React.ReactNode;}, key: string) {
+function NavbarIconTransition({ children }: { children: React.ReactNode }) {
   return (
     <motion.div
       initial={{ opacity: 0, width: 0 }}
-      animate={{ opacity: 1, width: '20px'}}
-      transition={{ duration: 0.5 }} 
+      animate={{ opacity: 1, width: '20px' }}
+      transition={{ duration: 0.5 }}
       className="flex items-center text-red-700"
     >
       {children}

@@ -33,7 +33,7 @@ export default function Experience(){
           {displayItems.map((item, index) => (
             <ListItem key={index} className='flex items-start'>
               <ListItemIcon className='mt-[8px] pl-[20px]'>
-                <FiberManualRecordIcon className='text-sm text-black'/>
+                <FiberManualRecordIcon sx={{fontSize: "14px", color: "black"}} />
               </ListItemIcon>
               <ListItemText primary={item} />
             </ListItem>

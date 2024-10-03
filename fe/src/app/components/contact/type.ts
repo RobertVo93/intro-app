@@ -1,4 +1,4 @@
-type ContactItem = {
+export type ContactItem = {
   img: string;
   location: string;
   office: string;

@@ -1,4 +1,3 @@
-import { useTranslations } from "next-intl"
 import ComponentNameTag from "../componentNameTag";
 import IndustriesItem from "./industriesItem";
 import { ServiceType } from "./type";

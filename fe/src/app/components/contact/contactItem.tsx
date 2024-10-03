@@ -1,12 +1,12 @@
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
-import Image from 'next/image';
+import { ContactItem } from './type';
 
-export default function ContactItem(item:ContactItem){
-  return(
+export default function ContactItemPage(item: ContactItem) {
+  return (
     <div className="w-full h-full flex flex-col justify-start text-[#002042] leading-[24px] cursor-pointer">
-      <img src={item.img} alt="" className="w-full h-[160px]"/>
+      <img src={item.img} alt="" className="w-full h-[160px]" />
       <div className="w-full mt-[20px] text-[16px] not-italic font-bold uppercase">
         {item.location}
       </div>
@@ -14,13 +14,13 @@ export default function ContactItem(item:ContactItem){
         {item.office}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <PhoneIcon className='mr-[10px] w-4 h-4'/> {item.phone}
+        <PhoneIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.phone}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <EmailIcon className='mr-[10px] w-4 h-4'/> {item.email}
+        <EmailIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.email}
       </div>
       <div className="w-full h-full flex text-[#222222] font-normal items-center">
-        <PlaceIcon className='mr-[10px] w-4 h-4'/> {item.address}
+        <PlaceIcon sx={{width: "16px", height: "16px", mr: "10px"}} /> {item.address}
       </div>
     </div>
   )

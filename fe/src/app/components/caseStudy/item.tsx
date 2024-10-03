@@ -1,7 +1,8 @@
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { CaseStudy } from './type';
 
-export default function CaseStudyItem({tag, title, description}:CaseStudy){
-  return(
+export default function CaseStudyItem({ tag, title, description }: CaseStudy) {
+  return (
     <div>
       <div className='text-[16px] leading-4 not-italic mt-5'>
         {tag}
@@ -13,8 +14,8 @@ export default function CaseStudyItem({tag, title, description}:CaseStudy){
         {description}
       </div>
       <div className='flex items-center mt-[20px] text-[19px] font-bold cursor-pointer'>
-        Read More <ArrowRightAltIcon className='text-red-700'/>
+        Read More <ArrowRightAltIcon sx={{color: "#b91c1c"}} />
       </div>
     </div>
-  ) 
+  )
 }

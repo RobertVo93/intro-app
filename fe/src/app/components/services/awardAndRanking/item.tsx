@@ -1,10 +1,20 @@
 import { Box } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { AwardAndRankingType } from "./type";
 
 export default function AwardAndRankingItem({time, title, description}: AwardAndRankingType){
   return(
-    <Box className='w-[210px] h-full pb-3 flex flex-col border-solid bg-[#f5f2f2] cursor-pointer hover:shadow-md transition-shadow duration-500'
+    <Box
       sx={{
+        width: "210px", 
+        height: "100%", 
+        pb: "12px", 
+        display: "flex", 
+        flexDirection: "column",
+        bgcolor: "#f5f2f2", 
+        cursor: "pointer", 
+        transitionProperty: "box-shadow", 
+        transitionDuration: 500,
         '&:hover': {
           '& #title': {
             color: 'red',

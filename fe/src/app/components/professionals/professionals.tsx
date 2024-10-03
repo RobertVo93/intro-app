@@ -1,8 +1,8 @@
-import RemoveIcon from '@mui/icons-material/Remove';
 import ProfessionalsItem from './item';
 import { useEffect, useState } from 'react';
 import { Button } from '@mui/material';
 import ComponentNameTag from '../componentNameTag';
+import { ProfessionalsType } from './type';
 
 
 const professionals: ProfessionalsType[] = [

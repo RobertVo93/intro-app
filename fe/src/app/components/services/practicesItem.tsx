@@ -1,13 +1,21 @@
 import { Box } from "@mui/material";
-import Image from "next/image";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { ServiceType } from "./type";
 
 
 export default function PracticesItem({field, image}: ServiceType){
   return(
-    <Box className='w-full h-full mb-[15px] flex flex-col border-solid bg-[#f5f2f2] cursor-pointer hover:shadow-md transition-shadow duration-500'
+    <Box
       sx={{
+        width: "100%", 
+        height: "100%", 
+        mb: "15px", 
+        display: "flex", 
+        flexDirection: "column",
+        bgcolor: "#f5f2f2", 
+        cursor: "pointer", 
+        transitionProperty: "box-shadow", 
+        transitionDuration: 500,
         '&:hover': {
           '& #user-name': {
             color: 'red',
@@ -23,7 +31,7 @@ export default function PracticesItem({field, image}: ServiceType){
         {field}
       </div>
       <div className="flex items-center px-[10px] pt-[15px] text-[16px] leading-[16px] font-bold text-[#002042] cursor-pointer">
-        Learn more <ArrowRightAltIcon className='text-red-700'/> 
+        Learn more <ArrowRightAltIcon sx={{ color: "#b91c1c"}} /> 
       </div>
     </Box>
   )

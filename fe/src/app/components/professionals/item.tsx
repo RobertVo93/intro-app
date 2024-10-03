@@ -1,16 +1,27 @@
 import { Box } from "@mui/material";
 import Image from "next/image";
 import User from '@images/user.png'
+import { ProfessionalsType } from "./type";
 
 
 export default function ProfessionalsItem({name, position}: ProfessionalsType){
   return(
-    <Box className='w-[210px] h-[300px] pb-3 flex flex-col border-solid bg-[#f5f2f2] cursor-pointer hover:shadow-md transition-shadow duration-500'
+    <Box
       sx={{
+        width: "210px", 
+        height: "300px", 
+        pb: "12px", 
+        display: "flex", 
+        flexDirection: "column",
+        bgcolor: "#f5f2f2", 
+        cursor: "pointer", 
+        transitionProperty: "box-shadow", 
+        transitionDuration: 500,
         '&:hover': {
           '& #user-name': {
             color: 'red',
           },
+          boxShadow: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)"
         }
       }}
     >

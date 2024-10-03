@@ -119,11 +119,11 @@ export default function AutomotiveHeader () {
                 <div className="flex flex-col mr-[80px]" key={idx}>
                   <div className="flex text-[18px] font-semibold not-italic leading-[24px] mb-2">{emp.name}</div>
                     <div className="flex items-center">
-                      <PhoneIcon className="w-5 h-5"/>
+                      <PhoneIcon sx={{width: "20px", height: "20px"}} />
                       <div className="ml-[15px]">{emp.phone}</div>
                     </div>
                     <div className="flex items-center">
-                      <EmailIcon className="w-5 h-5"/>
+                      <EmailIcon sx={{width: "20px", height: "20px"}}/>
                     <div className="ml-[15px]">{emp.email}</div>
                   </div>
                 </div>

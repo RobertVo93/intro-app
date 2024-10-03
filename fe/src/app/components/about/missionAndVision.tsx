@@ -8,7 +8,7 @@ export default function MissionAndVision({translationCollection}:{translationCol
   return(
     <div className="w-full h-full flex text-[#002042]">
       <div className="w-1/2 h-full flex flex-col">
-        <StarRateIcon className='w-[56px] h-[56px]'/>
+        <StarRateIcon sx={{width: "56px", height: "56px"}} />
         <div className='text-[20px] font-bold leading-[26.6px] mt-[30px]'>
           {t('vision.title')}
         </div>
@@ -17,7 +17,7 @@ export default function MissionAndVision({translationCollection}:{translationCol
         </div>
       </div>
       <div className="w-1/2 h-full flex flex-col">
-        <RedeemIcon className='w-[56px] h-[56px]'/>
+        <RedeemIcon sx={{width: "56px", height: "56px"}}/>
         <div className='text-[20px] font-bold leading-[26.6px] mt-[30px]'>
           {t('mission.title')}
         </div>

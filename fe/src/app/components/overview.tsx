@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl"
 import ComponentNameTag from "./componentNameTag";
-import { usePathname } from "@/src/navigation";
 
 export default function Overview({translationCollection}: {translationCollection: string}){
   const t = useTranslations(`${translationCollection}.overview`)

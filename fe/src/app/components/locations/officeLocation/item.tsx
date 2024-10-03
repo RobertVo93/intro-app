@@ -1,6 +1,5 @@
 'use client'
 
-import RemoveIcon from '@mui/icons-material/Remove';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
@@ -33,8 +32,8 @@ export default function OfficeLocationItem({
     lng: 106.61289903842204
   };
   
-  let coordinate = location==='Ha Noi' ?  HNCoordinate :  HCMCoordinate
-  let address = location==='Ha Noi' ?  "Ba Dinh, Ha Noi" :  "Tan Phu, Ho Chi Minh"
+  const coordinate = location==='Ha Noi' ?  HNCoordinate :  HCMCoordinate
+  const address = location==='Ha Noi' ?  "Ba Dinh, Ha Noi" :  "Tan Phu, Ho Chi Minh"
 
   return(
     <div className='w-1/2 relative'>
@@ -92,11 +91,21 @@ export default function OfficeLocationItem({
           {
             showLocation ? 
             <div>
-              <div className='flex items-center mt-2'><LocalPhoneIcon className='w-[15px] h-[15px] mr-3'/> 0123456789 </div>
-              <div className='flex items-center mt-2'><EmailIcon className='w-[15px] h-[15px] mr-3'/> email@gmail.com </div>
-              <div className='flex items-center mt-2'><PlaceIcon className='w-[15px] h-[15px] mr-3'/> {address} </div>
+              <div className='flex items-center mt-2'><LocalPhoneIcon sx={{width: "15px", height: "15px", mr: "12px"}}/> 0123456789 </div>
+              <div className='flex items-center mt-2'><EmailIcon sx={{width: "15px", height: "15px", mr: "12px"}}/> email@gmail.com </div>
+              <div className='flex items-center mt-2'><PlaceIcon sx={{width: "15px", height: "15px", mr: "12px"}}/> {address} </div>
               <div className='w-full h-full flex justify-start pl-[10px]'>
-                <Button startIcon={<SystemUpdateAltIcon />} className='w-[140px] h-[40px] mt-[20px] text-white text-[13px] bg-[#002042]'>
+                <Button 
+                  startIcon={<SystemUpdateAltIcon />} 
+                  sx={{
+                    width: "140px",
+                    height: "40px",
+                    mt: "20px",
+                    color: "white",
+                    fontSize: "13px",
+                    bgcolor: "#002042"
+                  }}
+                >
                   PDF Map
                 </Button>
               </div>

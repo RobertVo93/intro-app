@@ -15,7 +15,7 @@ export default function LocaleSwitcherItem({
   function onClickChange(nextLocale: string) {
     startTransition(() => {
       router.replace(
-        //@ts-ignore
+        //@ts-expect-error avoid build
         {pathname, params},
         {locale: nextLocale}
       )
