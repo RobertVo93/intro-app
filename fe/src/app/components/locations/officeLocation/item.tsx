@@ -38,7 +38,7 @@ export default function OfficeLocationItem({
   return(
     <div className='w-1/2 relative'>
       <ComponentNameTag name={`${location} Office`} />
-      <div className={`w-full h-[600px] border-[#002042] ${location==='HN' ? 'border-r-[1px]' : 'border-l-[1px]'}`}>
+      <div className={`w-full h-[600px] border-primary ${location==='HN' ? 'border-r-[1px]' : 'border-l-[1px]'}`}>
         <LoadScript googleMapsApiKey={`${apiKey}`}>
           <GoogleMap
             mapContainerStyle={{
@@ -70,7 +70,7 @@ export default function OfficeLocationItem({
 
       <div 
         className={`${showLocation ? 'w-[300px] h-[300px] p-[40px]' : 'w-[50px] h-[50px]'} absolute right-5 bottom-5 bg-white rounded-lg flex flex-col`}>
-        <div className='h-[25px] text-[#002042] text-[18px] not-italic font-bold leading-[23.94px] flex justify-between'>
+        <div className='h-[25px] text-primary text-[18px] not-italic font-bold leading-[23.94px] flex justify-between'>
           {showLocation ? 
             <div>{location} Office</div> : 
             null

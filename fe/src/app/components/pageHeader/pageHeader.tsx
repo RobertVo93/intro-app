@@ -50,7 +50,7 @@ export default function PageHeader(){
       </div>
 
       <div 
-        className={`w-full h-full flex absolute top-0 left-0 bg-gradient-to-r from-[#002042] from-50% to-[rgba(0,0,0,0)] to-100%`}
+        className={`w-full h-full flex absolute top-0 left-0 bg-gradient-to-r from-themeColor from-50% to-[rgba(0,0,0,0)] to-100%`}
         style={{ height: `${Number(t('header.height'))}px`}}  
       >
         <div className={`w-2/3 h-full flex flex-col justify-start px-[10px] pt-[160px] mx-[52px] text-white`}>

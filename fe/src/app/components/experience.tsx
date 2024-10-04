@@ -3,6 +3,7 @@ import { Button, List, ListItem, ListItemIcon, ListItemText } from '@mui/materia
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import ComponentNameTag from './componentNameTag';
+import { red } from '../theme';
 
 export default function Experience(){
   const t = useTranslations()
@@ -25,10 +26,10 @@ export default function Experience(){
 
   return(
     <div className='w-full px-[60px] pt-[80px] flex flex-col'>
-      <div className='flex items-center text-[14px] text-[#002042] font-semibold'>
+      <div className='flex items-center text-[14px] text-primary font-semibold'>
         <ComponentNameTag name='EXPERIENCE'/>
       </div>
-      <div className='mt-[20px] flex flex-col text-[#222222] text-[16px] font-normal leading-[24px]'>
+      <div className='mt-[20px] flex flex-col text-secondary text-[16px] font-normal leading-[24px]'>
         <List>
           {displayItems.map((item, index) => (
             <ListItem key={index} className='flex items-start'>
@@ -44,13 +45,10 @@ export default function Experience(){
         <Button
           onClick={onToggleLoadmore}
           sx={{
-            color: "#002042",
-            border: "1px solid #002042",
-            fontWeight: 600,
             "&:hover": {
               color: "white",
-              border: "1px solid red",
-              bgcolor: "red"
+              border: `1px solid ${red[500]}`,
+              bgcolor: red[500]
             }
           }}
         >

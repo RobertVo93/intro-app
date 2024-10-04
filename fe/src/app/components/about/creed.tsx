@@ -7,14 +7,14 @@ export default function Creed({translationCollection}:{translationCollection:str
   const facilitiesItems = t.raw("creed.facilities.items") as string[]
 
   return(
-    <div className="w-full h-full flex text-[#002042]">
+    <div className="w-full h-full flex text-primary">
       <div className="w-1/2 h-full flex flex-col">
         <div className='text-[20px] font-bold leading-[26.6px]'>
           {t("creed.lawFirm.title")}
         </div>
         {
           lawFirmItems.map((item, index) => (
-            <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
+            <div key={index} className='text-[16px] font-normal leading-[24px] text-secondary mt-[10px]'>
               <FiberManualRecordIcon sx={{width: "10px", height: "10px", color: "black"}} /> {item}
             </div>
           ))
@@ -26,7 +26,7 @@ export default function Creed({translationCollection}:{translationCollection:str
         </div>
         {
           facilitiesItems.map((item, index) => (
-            <div key={index} className='text-[16px] font-normal leading-[24px] text-[#222222] mt-[10px]'>
+            <div key={index} className='text-[16px] font-normal leading-[24px] text-secondary mt-[10px]'>
               <FiberManualRecordIcon sx={{width: "10px", height: "10px", color: "black"}} /> {item}
             </div>
           ))

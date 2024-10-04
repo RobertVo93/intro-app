@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import RelatedInsightItem from './item';
 import ComponentNameTag from '../componentNameTag';
 import { RelatedInsightType } from './type';
+import { red } from '../../theme';
 
 const relatedInsights: RelatedInsightType[] = [
   {time: "September 16, 2024", title: "Vietnam Publishes Draft Circular on Open APIs in the Banking Industry", description: "On July 23, 2024, the State Bank of Vietnam (SBV) published a draft circular regulating the implementation of open (publicly available) application programming interfaces, or Open APIs, in the banking industry (Draft Circular) to collect public comments. Open APIs in the banking sector are APIs of banks that allow third parties to process data for their own use or to provide products and services to customers. Urgent need Currently, the development of Open APIs in Vietnam is fragmented, with each bank using different API standards and security standards. There is no common standard for information technology systems, information storage, security, connectivity, or legal frameworks. Therefore, the promulgation of a regulation on Open APIs is urgently needed to create a clear legal basis and guidance for electronic banking transactions, especially in connecting to bank information systems and processing customer data safely, and creating new, innovative products and services to meet the increasing needs of customers. Cooperation of banks required The Draft Circular requires banks to provide Open API services to third parties for connection to the bank system and data processing. Banks have the right to refuse or suspend Open API services if third parties do not meet specified conditions. However, banks will be responsible for ensuring the quality and security of data, providing tools for customer data queries and revocation of third-party data processing rights, and coordinating with third parties and authorities to resolve issues. The Draft Circular standardizes Open API functions for all banks according to the Open API function list and the technical standards list specified in the Draft Circular. Open API service contract The template Open API service contract between banks and third parties using Open API services must have certain required contents such as provisions regarding confidentiality, data use purpose, and that the security level"},
@@ -41,13 +42,10 @@ export default function RelatedInsights(){
       <Button
           onClick={onToggleLoadmore}
           sx={{
-            color: "#002042",
-            border: "1px solid #002042",
-            fontWeight: 600,
             "&:hover": {
               color: "white",
-              border: "1px solid red",
-              bgcolor: "red"
+              border: `1px solid ${red[500]}`,
+              bgcolor: red[500]
             }
           }}
         >

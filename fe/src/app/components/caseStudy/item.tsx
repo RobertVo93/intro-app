@@ -1,5 +1,6 @@
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { CaseStudy } from './type';
+import { red } from '../../theme';
 
 export default function CaseStudyItem({ tag, title, description }: CaseStudy) {
   return (
@@ -14,7 +15,7 @@ export default function CaseStudyItem({ tag, title, description }: CaseStudy) {
         {description}
       </div>
       <div className='flex items-center mt-[20px] text-[19px] font-bold cursor-pointer'>
-        Read More <ArrowRightAltIcon sx={{color: "#b91c1c"}} />
+        Read More <ArrowRightAltIcon sx={{color: red[700]}} />
       </div>
     </div>
   )
