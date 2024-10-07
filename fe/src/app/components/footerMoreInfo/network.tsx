@@ -1,7 +1,7 @@
 
 export default function Networks(){
   return(
-    <div className="w-1/3 flex flex-col">
+    <div className="w-1/3 xs:w-full xs:mt-[30px] flex flex-col">
       <div className="text-[20px] not-italic font-semibold leading-5">
         Networks
       </div>

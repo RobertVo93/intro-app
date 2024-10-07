@@ -32,9 +32,9 @@ export default function Professionals(){
   }, [loadmore])
 
   return(
-    <div className="w-full h-full flex flex-col px-[60px] pt-[80px]">
+    <div className="w-full h-full flex flex-col px-[60px] pt-[80px] xs:p-[20px]">
       <ComponentNameTag name='PROFESSIONALS' />
-      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-5">
+      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-5 xs:grid-cols-1">
         {displayItems.map((item, index) => (
           <div key={index} className="flex items-center justify-center mt-[20px]">
             <ProfessionalsItem name={item.name} position={item.position}/>

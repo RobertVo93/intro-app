@@ -1,7 +1,7 @@
 
 export default function ContactHeader ({description}:{description:string}) {
   return(
-    <div className="w-3/4">
+    <div className="w-3/4 xs:w-full">
       {description}
   </div>
   )

@@ -9,8 +9,8 @@ import { iconColor } from '../theme';
 export default function PageFooter(){
   const t = useTranslations("pageFooter")
   return(
-    <div className='w-full h-full flex flex-col justify-center items-center'>
-      <div className="w-4/5 h-[250px] flex pt-[80px] border-b">
+    <div className='w-full h-full flex flex-col justify-center items-center xs:mb-5'>
+      <div className="w-4/5 h-[250px] flex pt-[80px] border-b xs:h-full xs:flex-col xs:border-none xs:pt-[20px]">
         <ContactCareer
           title={t('contact.title')} 
           description={t('contact.description')} 
@@ -24,8 +24,8 @@ export default function PageFooter(){
         <Networks />
       </div>
 
-      <div className="w-4/5 h-full pb-[30px] flex items-end justify-between">
-        <div className='text-primary text-[13px] not-italic font-normal leading-[24px]'>
+      <div className="w-4/5 h-full pb-[30px] flex items-end justify-between xs:justify-center">
+        <div className='text-primary text-[13px] not-italic font-normal leading-[24px] xs:hidden'>
           © 2024 Tilleke & Gibbins International Ltd. All rights reserved.
         </div>
         <div className='h-[50px] flex items-end'>
@@ -33,7 +33,7 @@ export default function PageFooter(){
           <YouTubeIcon sx={{width: "40px", height: "40px", color: iconColor, cursor: "pointer"}}/>
           <FacebookIcon sx={{width: "40px", height: "40px", color: iconColor, cursor: "pointer"}}/>
         </div>
-        <div className='flex text-primary text-[14px] not-italic font-normal leading-[24px]'>
+        <div className='flex text-primary text-[14px] not-italic font-normal leading-[24px] xs:hidden'>
           <div className='cursor-pointer'> Privacy Policy </div> &nbsp;|&nbsp; 
           <div className='cursor-pointer'> Fraudulent Communications </div> &nbsp;|&nbsp; 
           <div className='cursor-pointer'> Legal Notice </div> 

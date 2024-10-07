@@ -11,10 +11,10 @@ export default function AboutComponents({ translationCollection }: { translation
   const aboutItems = t.raw("aboutItems") as IAboutItem[]
 
   return (
-    <div className="w-full h-full px-[10%] pt-[80px] grid grid-cols-2 gap-[20px]">
+    <div className="w-full h-full px-[10%] pt-[80px] grid grid-cols-2 gap-[20px] xs:grid-cols-1">
       {
         aboutItems.map((item, index) => (
-          <div key={index} className="w-full h-[500px] flex flex-col bg-[#77777746] cursor-pointer">
+          <div key={index} className="w-full h-[500px] flex flex-col bg-[#77777746] cursor-pointer xs:pb-[10px]">
             <img alt="" src={item.img} className="w-full h-[310px]" />
             <div className="px-[20px] mt-[20px] text-[18px] font-bold not-italic leading-[24px]">
               {item.title}

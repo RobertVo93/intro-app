@@ -19,9 +19,9 @@ const fields: ServiceType[] = [
 export default function Practices(){
 
   return(
-    <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-white font-semibold bg-themeColor">
+    <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-white font-semibold bg-primary xs:p-[20px]">
       <ComponentNameTag name='Practices'/>
-      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4">
+      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4 xs:grid-cols-1">
         {
           fields.map((field, index) => (
             <div key={index} className="flex items-center justify-center mt-[20px]">

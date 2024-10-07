@@ -1,10 +1,14 @@
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react';
-import PanelItem from './panelItem';
 import { NavbarPanelTransition } from '../transitions/navbarItemTransition';
 import LocaleSwitcher from '../localeSwitcher/localeSwitcher';
 import { useRouter } from '@/src/navigation';
 import { WebNavBarItemType } from './type';
+
+import { useMediaQuery } from '@mui/material';
+import { OthersMenu, ServicesMenu } from './detailMenu';
+import { useDispatch } from 'react-redux';
+import { setCloseDetailMenu, setDetailMenu } from '@/src/redux/mobileNavbarSlice';
 
 const industries = [
   'Automotive',
@@ -46,29 +50,44 @@ const abouts = [
 export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
   const [showPanel, setShowPanel] = useState(false);
   const router = useRouter()
+  const isXs = useMediaQuery('(max-width:640px)')
+  const dispatch = useDispatch()
+
+  const onMenuBack = () => {
+    dispatch(setDetailMenu(undefined))
+  }
 
   const handleNavigate = (title:string) => {
     // mock: some page not designed yet
-    if(title === 'services') {
-      router.push('/services')
-    } else if(title === 'locations') {
-      router.push('/')
-    } else if(title === 'about') {
-      router.push('/about')
-    } else if(title === 'contact') {
-      router.push('/contact')
+    if(isXs) {
+      if(title === 'contact') {
+        router.push('/contact')
+        dispatch(setCloseDetailMenu())
+      }
     } else {
-      console.log('Can not navigate right now')
+      if(title === 'services') {
+        router.push('/services')
+      } else if(title === 'locations') {
+        router.push('/')
+      } else if(title === 'about') {
+        router.push('/about')
+      } else if(title === 'contact') {
+        router.push('/contact')
+      } else {
+        console.log('Can not navigate right now')
+      }
     }
+
+    dispatch(setDetailMenu(detailMenu()))
   }
 
-  const displayedPanel = () => {
+  const detailMenu = () => {
     switch(title) {
-      case('services'): return <ServicesMenu />
-      case('locations'): return <OthersMenu menuWidth={130} items={locations}/>
-      case('careers'): return <OthersMenu menuWidth={210} items={careers}/>
-      case('about'): return <OthersMenu menuWidth={235} items={abouts}/>
-      case('language'): return <LocaleSwitcher />
+      case('services'): return <ServicesMenu industries={industries} practices={practices} onMenuBack={onMenuBack}/>
+      case('locations'): return <OthersMenu name={title} menuWidth={130} items={locations} onMenuBack={onMenuBack}/>
+      case('careers'): return <OthersMenu name={title} menuWidth={210} items={careers} onMenuBack={onMenuBack}/>
+      case('about'): return <OthersMenu name={title} menuWidth={235} items={abouts} onMenuBack={onMenuBack}/>
+      case('language'): return <LocaleSwitcher onMenuBack={onMenuBack}/>
     }
   }
   return(
@@ -77,8 +96,8 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
       style={{
         textShadow: "2px 2px 3px black"
       }}
-      onMouseEnter={() => setShowPanel(true)}
-      onMouseLeave={() => setShowPanel(false)}
+      onMouseEnter={() => { if(!isXs) setShowPanel(true)}}
+      onMouseLeave={() => { if(!isXs) setShowPanel(false)}}
     >
       <div 
         className='uppercase' 
@@ -90,56 +109,10 @@ export default function WebNavbarItem({title, canExpand}:WebNavBarItemType){
       {showPanel && canExpand && (
         <NavbarPanelTransition>
           <div className='p-[40px] bg-[#22229b] shadow-lg cursor-default'>
-            {displayedPanel()}
+            {detailMenu()}
           </div>
         </NavbarPanelTransition>
       )}
-    </div>
-  )
-}
-
-const ServicesMenu = () => {
-  return(
-    <div className='w-[800px] flex text-white text-[15px] font-normal leading-5 normal-case'>
-      <div className='w-1/3 h-full flex flex-col border-r-2 border-solid border-[#1a497b]'>
-        <div className='font-bold'>Industries</div>
-        <div className='mt-[5px]'>
-          {industries.map((industry) => (
-            <PanelItem key={industry} title={industry}/>
-          ))}
-        </div>
-      </div>
-
-      <div className='w-full flex flex-col pl-[40px] '>
-        <div className='font-bold'>Practices</div>
-        <div className='w-1/2 h-[320px] mt-[5px]'
-          style={{
-            columnWidth: '300px',
-            columnCount: 8
-          }}
-        >
-          {practices.map(practice => (
-            <PanelItem key={practice} title={practice}/>
-          ))}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-const OthersMenu = ({items, menuWidth}:{items:string[], menuWidth: number}) => {
-  return(
-    <div 
-      className={`flex flex-col text-white text-[15px] font-normal leading-5`}
-      style={{
-        width: `${menuWidth}px`
-      }}
-    >
-      {
-        items.map(location => (
-          <PanelItem key={location} title={location}/>
-        ))
-      }
     </div>
   )
 }
