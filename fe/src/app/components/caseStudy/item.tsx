@@ -11,7 +11,7 @@ export default function CaseStudyItem({ tag, title, description }: CaseStudy) {
       <div className='mt-[15px] text-[32px] leading-[38px] font-bold'>
         {title}
       </div>
-      <div className='h-[full] mt-[10px] text-[18px] text-wrap'>
+      <div className='h-[full] xs:h-[200px] mt-[10px] text-[18px] text-wrap whitespace-nowrap overflow-hidden text-ellipsis'>
         {description}
       </div>
       <div className='flex items-center mt-[20px] text-[19px] font-bold cursor-pointer'>

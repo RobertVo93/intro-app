@@ -29,9 +29,9 @@ export default function RelatedInsights(){
     }
   }, [loadmore])
   return (
-    <div className="w-full h-full px-[60px] pt-[80px] flex flex-col">
+    <div className="w-full h-full px-[60px] pt-[80px] flex flex-col xs:p-[20px]">
       <ComponentNameTag name='RELATED INSIGHTS' />
-      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4">
+      <div className="w-full h-full flex-wrap grid gap-4 grid-cols-4 xs:grid-cols-1">
         {displayItems.map((item, index) => (
           <div key={index} className='flex items-center justify-center mt-[20px]'>
             <RelatedInsightItem time={item.time} title={item.title} description={item.description}/>

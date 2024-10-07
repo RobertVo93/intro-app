@@ -41,7 +41,7 @@ export default function TimeLine({ translationCollection }: { translationCollect
   const paginatedItems = timeStamps.slice(startIndex, endIndex);
 
   return (
-    <div className="w-full h-[800px] relative">
+    <div className="w-full h-[800px] xs:h-[900px] relative">
       <div className="w-full h-[520px] bg-themeColor">
         <div className='text-[14px] px-[10%] leading-5 uppercase not-italic font-semibold flex items-center text-white pt-[80px]'>
           <ComponentNameTag name='TIMELINE'/>
@@ -75,14 +75,14 @@ export default function TimeLine({ translationCollection }: { translationCollect
         </div>
       </div>
 
-      <div className="w-full h-[500px] absolute bottom-[50px] px-[4%] flex justify-center z-50">
-        <div className='w-full h-full flex flex-col bg-slate-100 relative' >
+      <div className="w-full h-[500px] absolute bottom-[50px] xs:bottom-[50px] px-[4%] flex justify-center z-50 xs:bg-slate-400 xs:h-[600px]">
+        <div className='w-full h-full bg-slate-100 relative' >
           <div className='w-full h-full overflow-hidden relative'>
             {
               paginatedItems.map((item) => (
                 <motion.div
                   key={Math.random()}
-                  className='w-full h-full flex absolute right-0'
+                  className='w-full h-full flex absolute right-0 xs:flex-col xs:bg-slate-400'
                   initial={{ opacity: 0, x: 100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5 }}
@@ -90,16 +90,16 @@ export default function TimeLine({ translationCollection }: { translationCollect
                   <img
                     alt=''
                     src={item.img}
-                    className='w-[40%] h-full'
+                    className='w-[40%] h-full xs:h-[270px] xs:w-full'
                   />
-                  <div className='flex flex-col px-[50px] pt-[50px]'>
-                    <div className='mt-[20px] text-primary text-[16px] not-italic font-bold leading-[21.28px]'>
+                  <div className='flex flex-col px-[50px] pt-[50px] xs:h-[500px] xs:p-[20px] xs:mt-p[20px'>
+                    <div className='mt-[20px] text-primary text-[16px] not-italic font-bold leading-[21.28px] xs:mt-0'>
                       {item.time}
                     </div>
-                    <div className='my-[20px] text-primary text-[36px] font-bold leading-[46px]'>
+                    <div className='my-[20px] text-primary text-[36px] font-bold leading-[46px] xs:text-[24px] xs:leading-[24px] xs:my-[5px]'>
                       {item.title}
                     </div>
-                    <div className='mb-[20px] text-secondary text-[16px] font-normal leading-[24px]'>
+                    <div className='mb-[20px] text-secondary text-[16px] font-normal leading-[24px] xs:h-[200px] xs:overflow-auto'>
                       {item.content}
                     </div>
                   </div>

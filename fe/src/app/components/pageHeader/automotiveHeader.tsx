@@ -71,7 +71,6 @@ const agencies = [
   },
 ]
 
-
 export default function AutomotiveHeader () {
   const [currentLocation, setCurrentLocation] = useState('Vietnam')
   const [currentEmployee, setCurrentEmployee] = useState<undefined | {
@@ -90,18 +89,15 @@ export default function AutomotiveHeader () {
 
   return(
     <div className="w-full h-full flex flex-col justify-start">
-      <div className='text-[28px] not-italic font-bold leading-[35px] mt-[20px]'>
+      <div className='text-[28px] not-italic font-bold leading-[35px] mt-[20px] xs:mt-0'>
         Key Contacts
       </div>
 
-      <div className='w-full mt-[20px] grid grid-cols-6 cursor-pointer'>
+      <div className='w-full mt-[20px] grid grid-cols-6 cursor-pointer xs:flex xs:overflow-auto xs:mt-[10px]'>
         {
           agencies.map((ag, idx) => (
             <div 
-              className={`w-[115px] h-[40px] border-[1.5px] border-solid border-white flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-primary bg-white' : null}`}
-              style={{
-                
-              }}
+              className={`w-[115px] h-[40px] xs:mr-[5px] border-[1.5px] border-solid border-white flex justify-center items-center rounded-md font-bold ${currentLocation === ag.location ? 'text-primary bg-white' : null}`}
               key={idx}
               onClick={() => setCurrentLocation(ag.location)}
             >
@@ -114,9 +110,9 @@ export default function AutomotiveHeader () {
       <AutomotiveHeaderTransition key={Math.random()}>
         {
           currentEmployee ? 
-            <div className='w-full h-full flex mt-[30px] justify-start'>
+            <div className='w-full h-full flex mt-[30px] justify-start xs:mt-[20px]'>
               {currentEmployee.map((emp, idx) => (
-                <div className="flex flex-col mr-[80px]" key={idx}>
+                <div className="flex flex-col mr-[80px] xs:mr-[20px]" key={idx}>
                   <div className="flex text-[18px] font-semibold not-italic leading-[24px] mb-2">{emp.name}</div>
                     <div className="flex items-center">
                       <PhoneIcon sx={{width: "20px", height: "20px"}} />

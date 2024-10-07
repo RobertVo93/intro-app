@@ -45,12 +45,14 @@ export default function MoreDetail({translationCollection}:{translationCollectio
 
   return(
     <div className="w-full h-full flex flex-col">
-      <div className="w-full h-[200px] px-[10px] pt-[50px] pb-[40px] flex bg-[#77777746] text-primary ">
+      <div className="w-full h-[200px] xs:h-full px-[10px] pt-[50px] pb-[40px] flex bg-[#77777746] text-primary xs:flex-wrap xs:px-[20px]">
         {
           items.map((item, index) => (
-            <div key={index} className="w-1/4 flex flex-col items-center justify-center">
-              <div className="text-[60px] font-semibold leading-[60px]">{item.number}</div>
-              <div className="text-[18px] leading-[45px]">{item.detail}</div>
+            <div key={index} className="w-1/2 flex flex-col items-center xs:mt-[20px]">
+              <div className="flex flex-col justify-center items-center xs:items-start">
+                <div className="text-[60px] font-semibold leading-[60px] xs:text-[36px] xs:leading-[36px]">{item.number}</div>
+                <div className="text-[18px] leading-[45px] xs:text-[14px] xs:leading-[18.2px]">{item.detail}</div>
+              </div>
             </div>
           ))
         }
@@ -58,12 +60,12 @@ export default function MoreDetail({translationCollection}:{translationCollectio
 
       <div className="w-full h-full bg-black px-[10%] relative">
         <img src={backgroundImg} alt="" className="w-full h-[450px]"/>
-        <div className="w-[80%] h-[56px] absolute bottom-[-28px] bg-themeColor flex justify-center">
+        <div className="w-[80%] h-[56px] absolute bottom-[-28px] bg-themeColor flex justify-center xs:w-full xs:left-0">
           {
             infoItems.map((item, index) => (
               <div 
                 key={index} 
-                className="w-1/3 flex items-center justify-center cursor-pointer text-white text-[16px] leading-[16px]"
+                className="w-1/3 flex items-center justify-center cursor-pointer text-white text-[16px] leading-[16px] text-center xs:px-[20px]"
                 style={{
                   fontWeight: infoItem === item ? 600 : 400
                 }}
@@ -75,7 +77,7 @@ export default function MoreDetail({translationCollection}:{translationCollectio
           }
         </div>
       </div>
-      <div className="w-full h-full px-[10%] pt-[80px] flex">
+      <div className="w-full h-full px-[10%] pt-[80px] flex xs:px-[20px] xs:pt-[50px]">
         {infoComponent}
       </div>
     </div>

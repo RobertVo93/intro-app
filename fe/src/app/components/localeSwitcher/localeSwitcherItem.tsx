@@ -1,6 +1,8 @@
 import { startTransition } from "react"
 import { usePathname, useRouter } from "@/src/navigation";
 import { useParams } from "next/navigation";
+import { useDispatch } from "react-redux";
+import { setCloseDetailMenu } from "@/src/redux/mobileNavbarSlice";
 
 export default function LocaleSwitcherItem({
   lang
@@ -11,6 +13,7 @@ export default function LocaleSwitcherItem({
   const pathname = usePathname()
   const params = useParams()
   const nextLocale = lang === 'English' ? 'en' : 'vi'
+  const dispatch = useDispatch()
 
   function onClickChange(nextLocale: string) {
     startTransition(() => {
@@ -25,7 +28,10 @@ export default function LocaleSwitcherItem({
   return(
     <div 
       className={`h-[40px] py-[10px] cursor-pointer hover:text-red-600 transition duration-500`}
-      onClick={() => onClickChange(nextLocale)}
+      onClick={() => {
+        onClickChange(nextLocale)
+        dispatch(setCloseDetailMenu())
+      }}
     >
       {lang}
     </div>

@@ -6,13 +6,13 @@ export default function Overview({translationCollection}: {translationCollection
   const descriptions = t.raw("descriptions") as string[]
 
   return(
-    <div className="w-full full flex flex-col px-[60px] py-[80px] text-[14px] text-primary font-semibold">
+    <div className="w-full full flex flex-col px-[60px] py-[80px] xs:px-[20px] xs:py-[20px] text-[14px] text-primary font-semibold">
       <ComponentNameTag name={t('overview')}/>
-      <div className="flex mt-[30px]">
-        <div className="w-1/2 text-[36px] leading-[46px] not-italic mr-[50px]">
+      <div className="flex xs:flex-col mt-[30px] xs:mt-[10px]">
+        <div className="w-1/2 xs:w-full text-[36px] xs:text-[24px] leading-[46px] not-italic mr-[50px] xs:leading-[30px]">
           {t('title')}
         </div>
-        <div className="w-1/2 font-sans text-[16px] leading-6 text-secondary">
+        <div className="w-1/2 xs:w-full font-sans text-[16px] leading-6 text-secondary xs:mt-[20px]">
           {
             descriptions.map((item: string, index: number) =>(
               <div key={index} className="font-normal">{item}</div>

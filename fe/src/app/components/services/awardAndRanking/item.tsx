@@ -1,13 +1,14 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import { AwardAndRankingType } from "./type";
 import { red } from "@/src/app/theme";
 
 export default function AwardAndRankingItem({time, title, description}: AwardAndRankingType){
+  const isXs = useMediaQuery('(max-width:640px)')
   return(
     <Box
       sx={{
-        width: "210px", 
+        width: isXs ? "full" : "210px", 
         height: "100%", 
         pb: "12px", 
         display: "flex", 
@@ -34,7 +35,7 @@ export default function AwardAndRankingItem({time, title, description}: AwardAnd
       >
         {title}
       </div>
-      <div className='w-full h-[160px] px-[10px] mt-[10px] overflow-hidden text-[14px] font-normal leading-[18px] text-primary '>
+      <div className='w-full h-[160px] px-[10px] mt-[10px] overflow-hidden text-[14px] font-normal leading-[18px] text-primary xs:hidden'>
         {description}
       </div>
       <div className='w-full px-[10px] flex items-center mt-[20px] text-[16px] leading-[16px] font-bold text-primary cursor-pointer'>

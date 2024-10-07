@@ -63,7 +63,7 @@ const contactItems: ContactItem[] = [
 export default function ContactContainer() {
   return (
     <div className="w-full h-full flex justify-center ">
-      <div className="w-4/5 h-full pt-[80px] grid grid-cols-4 gap-[20px]">
+      <div className="w-4/5 h-full pt-[80px] grid grid-cols-4 gap-[20px] xs:grid-cols-1">
         {
           contactItems.map((item, index) => (
             <ContactItemPage

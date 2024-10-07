@@ -36,7 +36,7 @@ export default function OfficeLocationItem({
   const address = location==='Ha Noi' ?  "Ba Dinh, Ha Noi" :  "Tan Phu, Ho Chi Minh"
 
   return(
-    <div className='w-1/2 relative'>
+    <div className='w-1/2 relative xs:w-full'>
       <ComponentNameTag name={`${location} Office`} />
       <div className={`w-full h-[600px] border-primary ${location==='HN' ? 'border-r-[1px]' : 'border-l-[1px]'}`}>
         <LoadScript googleMapsApiKey={`${apiKey}`}>
