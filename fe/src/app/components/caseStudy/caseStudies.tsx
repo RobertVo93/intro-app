@@ -49,10 +49,10 @@ export default function CaseStudies({ translationCollection }: { translationColl
         <div className='bg-black w-[200px]'></div>
       </div>
 
-      <div className='w-full h-[560px] z-50 absolute top-0 left-0 pl-[120px] text-white'>
-        <div className='px-[60px] pt-[60px] pb-[30px] w-full h-full flex flex-col'>
+      <div className='w-full h-[560px] z-50 absolute top-0 left-0 pl-[120px] text-white xs:pl-0'>
+        <div className='px-[60px] pt-[60px] pb-[30px] w-full h-full flex flex-col xs:p-[20px]'>
           <ComponentNameTag name='CASE STUDIES' />
-          <div className='w-[55%] h-[400px]'>
+          <div className='w-[55%] xs:w-full h-[400px] xs:h-[700px]'>
             {
               paginatedItems.map((item) => (
                 <CaseStudyTransition key={Math.random()}>

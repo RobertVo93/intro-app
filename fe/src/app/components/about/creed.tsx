@@ -7,8 +7,8 @@ export default function Creed({translationCollection}:{translationCollection:str
   const facilitiesItems = t.raw("creed.facilities.items") as string[]
 
   return(
-    <div className="w-full h-full flex text-primary">
-      <div className="w-1/2 h-full flex flex-col">
+    <div className="w-full h-full flex text-primary xs:flex-col">
+      <div className="w-1/2 h-full flex flex-col xs:w-full">
         <div className='text-[20px] font-bold leading-[26.6px]'>
           {t("creed.lawFirm.title")}
         </div>
@@ -20,7 +20,7 @@ export default function Creed({translationCollection}:{translationCollection:str
           ))
         }
       </div>
-      <div className="w-1/2 h-full flex flex-col">
+      <div className="w-1/2 h-full flex flex-col xs:w-full">
         <div className='text-[20px] font-bold leading-[26.6px]'>
           {t("creed.facilities.title")}
         </div>

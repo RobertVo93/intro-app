@@ -25,7 +25,7 @@ export default function Experience(){
   }
 
   return(
-    <div className='w-full px-[60px] pt-[80px] flex flex-col'>
+    <div className='w-full px-[60px] pt-[80px] flex flex-col xs:p-[20px]'>
       <div className='flex items-center text-[14px] text-primary font-semibold'>
         <ComponentNameTag name='EXPERIENCE'/>
       </div>

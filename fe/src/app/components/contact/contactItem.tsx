@@ -6,7 +6,7 @@ import { ContactItem } from './type';
 export default function ContactItemPage(item: ContactItem) {
   return (
     <div className="w-full h-full flex flex-col justify-start text-primary leading-[24px] cursor-pointer">
-      <img src={item.img} alt="" className="w-full h-[160px]" />
+      <img src={item.img} alt="" className="w-full h-[160px] xs:hidden"/>
       <div className="w-full mt-[20px] text-[16px] not-italic font-bold uppercase">
         {item.location}
       </div>

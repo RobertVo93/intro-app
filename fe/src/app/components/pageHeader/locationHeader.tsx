@@ -16,9 +16,9 @@ const locations = [
 
 export default function LocationHeader () {
   return(
-    <div className="w-full flex justify-start">
+    <div className={`w-full flex justify-start xs:flex-col`}>
       {locations.map((loc, idx) => (
-        <div className="flex flex-col mr-[80px]" key={idx}>
+        <div className="flex flex-col mr-[80px] xs:mt-[20px]" key={idx}>
           <div className="flex text-[18px] font-semibold not-italic leading-[24px] mb-3">{loc.location} Office</div>
             <div className="flex items-center">
               <PhoneIcon sx={{width: "20px", height: "20px"}}/>

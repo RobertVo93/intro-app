@@ -8,7 +8,7 @@ export default function OfficeLocation(){
   const [showLocationHCM, setShowLocationHCM] = useState(true)
 
   return(
-    <div className="w-full h-full flex pt-[80px]">
+    <div className="w-full h-full flex pt-[80px] xs:p-[20px] xs:flex-col">
       <OfficeLocationItem 
         location='Ha Noi'
         showLocation={showLocationHN} 
